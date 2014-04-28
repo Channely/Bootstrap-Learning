@@ -1,0 +1,17 @@
+搭建bootstrap
+	基本的html页面
+	引入bootstrap
+容器:container
+标题:h3 和 导航:navbar
+下拉菜单 - Dropdowns
+图标 - Icons
+背景区块-jumbotron
+栅格系统 - Grid System
+导航 - Navs
+滚动监听 - ScrollSpy
+浮岛属性 - Affix
+
+排版 - Typography
+
+表单 - Forms
+按钮 - Buttons
