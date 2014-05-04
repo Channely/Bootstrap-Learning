@@ -1,10 +1,182 @@
 <!DOCTYPE html>
-<html>
-<head lang="en">
+<html lang="zh">
+<head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>Bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet" media="screen">
+    <style type="text/css">
+        body{
+            padding-top: 70px;
+        }
+
+        .bs-example{
+            margin-bottom:40px;
+        }
+    </style>
 </head>
 <body>
+<!--===========================================nav-bar===============================================================-->
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Bootstrap</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="index-1-boot.html">Blank</a></li>
+                <li class="active"><a href="index-2-grid-system.html">栅格系统</a></li>
+                <li><a href="index-3-typography.html">字体排版</a></li>
+                <li><a href="index-7-tables.html">表格</a></li>
+                <li><a href="index-8-lists.html">列表</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--==========================================page content=======================================================-->
+<div class="container">
+    <div class="bs-example">
+        <button type="button" class="btn btn-default btn-lg">Default</button>
+        <button type="button" class="btn btn-primary btn-lg">Primary</button>
+        <button type="button" class="btn btn-info btn-lg">Info</button>
+        <button type="button" class="btn btn-success btn-lg">Success</button>
+        <button type="button" class="btn btn-warning btn-lg">Warning</button>
+        <button type="button" class="btn btn-danger btn-lg">Danger</button>
+        <hr>
+        <button type="button" class="btn btn-default">Default</button>
+        <button type="button" class="btn btn-primary">Primary</button>
+        <button type="button" class="btn btn-info">Info</button>
+        <button type="button" class="btn btn-success">Success</button>
+        <button type="button" class="btn btn-warning">Warning</button>
+        <button type="button" class="btn btn-danger">Danger</button>
+        <hr>
+        <button type="button" class="btn btn-default btn-sm">Default</button>
+        <button type="button" class="btn btn-primary btn-sm">Primary</button>
+        <button type="button" class="btn btn-info btn-sm">Info</button>
+        <button type="button" class="btn btn-success btn-sm">Success</button>
+        <button type="button" class="btn btn-warning btn-sm">Warning</button>
+        <button type="button" class="btn btn-danger btn-sm">Danger</button>
+        <hr>
+        <button type="button" class="btn btn-default btn-xs">Default</button>
+        <button type="button" class="btn btn-primary btn-xs">Primary</button>
+        <button type="button" class="btn btn-info btn-xs">Info</button>
+        <button type="button" class="btn btn-success btn-xs">Success</button>
+        <button type="button" class="btn btn-warning btn-xs">Warning</button>
+        <button type="button" class="btn btn-danger btn-xs">Danger</button>
+    </div>
+    <div class="bs-example">
+        <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
+        <button type="button" class="btn btn-default btn-lg btn-block">Block level button</button>
+    </div>
+    <div class="bs-example">
+        <a href="#" class="btn btn-default btn-lg disabled">Default</a>
+        <a href="#" class="btn btn-primary btn-lg disabled">Primary</a>
+        <a href="#" class="btn btn-info btn-lg disabled">Info</a>
+        <a href="#" class="btn btn-success btn-lg disabled">Success</a>
+        <a href="#" class="btn btn-warning btn-lg disabled">Warning</a>
+        <a href="#" class="btn btn-danger btn-lg disabled">Danger</a>
+    </div>
+    <div class="bs-example">
+        <button type="button" class="btn btn-default btn-lg" disabled="disabled">Default</button>
+        <button type="button" class="btn btn-primary btn-lg" disabled="disabled">Primary</button>
+        <button type="button" class="btn btn-info btn-lg" disabled="disabled">Info</button>
+        <button type="button" class="btn btn-success btn-lg" disabled="disabled">Success</button>
+        <button type="button" class="btn btn-warning btn-lg" disabled="disabled">Warning</button>
+        <button type="button" class="btn btn-danger btn-lg" disabled="disabled">Danger</button>
+    </div>
+    <div class="bs-example">
+        <a href="#" class="btn btn-default btn-lg">Large button</a>
+        <button type="button" class="btn btn-default btn-lg">Large button</button>
+        <input type="button" class="btn btn-default btn-lg" value="Large button">
+        <br><br>
+        <a href="#" class="btn btn-default">Default button</a>
+        <button type="button" class="btn btn-default">Default button</button>
+        <input type="button" class="btn btn-default" value="Default button">
+        <br><br>
+        <a href="#" class="btn btn-default btn-sm">Small button</a>
+        <button class="btn btn-default btn-sm" type="button">Small button</button>
+        <input type="button" class="btn btn-default btn-sm" value="Small button">
+        <br><br>
+        <a href="#" class="btn btn-default btn-xs">Mini button</a>
+        <button type="button" class="btn btn-default btn-xs">Mini button</button>
+        <input type="button" class="btn btn-default btn-xs" value="Mini button">
+        <hr>
+        <a href="#" class="btn btn-primary btn-lg">Large button</a>
+        <button type="button" class="btn btn-primary btn-lg">Large button</button>
+        <input type="button" class="btn btn-primary btn-lg" value="Large button">
+        <br><br>
+        <a href="#" class="btn btn-primary">Default button</a>
+        <button type="button" class="btn btn-primary">Default button</button>
+        <input type="button" class="btn btn-primary" value="Default button">
+        <br><br>
+        <a href="#" class="btn btn-primary btn-sml">Small button</a>
+        <button type="button" class="btn btn-primary btn-sm">Small button</button>
+        <input type="button" class="btn btn-primary btn-sm" value="Small button">
+        <br><br>
+        <a href="#" class="btn btn-primary btn-xs">Mini button</a>
+        <button type="button" class="btn btn-primary btn-xs">Mini button</button>
+        <input type="button" class="btn btn-primary btn-xs" value="Mini button">
+    </div>
+    <div class="bs-example">
+        <button type="button" class="btn btn-default" data-loading-text="Loading ...">Default</button>
+        <button type="button" class="btn btn-primary" data-loading-text="Loading...">Primary</button>
+        <button type="button" class="btn btn-info" data-loading-text="Loading...">Info</button>
+        <button type="button" class="btn btn-success" data-loading-text="Loading...">Success</button>
+        <button type="button" class="btn btn-warning" data-loading-text="Loading...">Warning</button>
+        <button type="button" class="btn btn-danger" data-loading-text="Loading...">Danger</button>
+    </div>
+    <div class="bs-example">
+        <button type="button" class="btn btn-default" data-toggle="button">Default</button>
+        <button type="button" class="btn btn-primary active" data-toggle="button">Primary</button>
+        <button type="button" class="btn btn-info active" data-toggle="button">Info</button>
+        <button type="button" class="btn btn-success active" data-toggle="button">Success</button>
+        <button type="button" class="btn btn-warning" data-toggle="button">Warning</button>
+        <button type="button" class="btn btn-danger" data-toggle="button">Danger</button>
+    </div>
+    <body>
+    <div class="bs-example">
+        <div class="btn-group" data-toggle="buttons">
+            <label class="btn btn-primary active">
+                <input type="checkbox"> Option 1
+            </label>
+            <label class="btn btn-primary active">
+                <input type="checkbox"> Option 2
+            </label>
+            <label class="btn btn-primary active">
+                <input type="checkbox"> Option 3
+            </label>
+        </div>
+    </div>
+    </body>
+    <div class="bs-example">
+        <div class="btn-group" data-toggle="buttons">
+            <label class="btn btn-primary active">
+                <input type="radio" name="options" id="option1"> Option 1
+            </label>
+            <label class="btn btn-primary">
+                <input type="radio" name="options" id="option2"> Option 2
+            </label>
+            <label class="btn btn-primary">
+                <input type="radio" name="options" id="option3"> Option 3
+            </label>
+        </div>
+    </div>
+</div>
 
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
