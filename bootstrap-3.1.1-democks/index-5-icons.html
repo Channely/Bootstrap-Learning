@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet" media="screen">
+    <style type="text/css">
+        body{
+            padding-top: 70px;
+        }
+
+        .bs-example{
+            margin-bottom:40px;
+        }
+    </style>
+</head>
+<body>
+<!--===========================================nav-bar===============================================================-->
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index-1-boot.html" style="color: deepskyblue">Bootstrap</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <!--<li><a href="index-1-boot.html">Boot</a></li>-->
+                <li><a href="index-2-grid-system.html">栅格系统</a></li>
+                <li><a href="index-3-typography.html">排版</a></li>
+                <li><a href="index-4-buttons.html">按钮</a></li>
+                <li class="active"><a href="index-5-icons.html">图标</a></li>
+                <li><a href="index-7-tables.html">表格</a></li>
+                <li><a href="index-8-lists.html">列表</a></li>
+                <li><a href="index-8-lists.html">隐藏</a></li>
+                <li><a href="index-8-lists.html">标签</a></li>
+                <li><a href="index-8-lists.html">表单</a></li>
+                <li><a href="index-8-lists.html">标签页</a></li>
+                <li><a href="index-8-lists.html">折叠</a></li>
+                <li><a href="index-8-lists.html">轮播</a></li>
+                <li><a href="index-8-lists.html">面包屑</a></li>
+                <li><a href="index-8-lists.html">分页</a></li>
+                <li><a href="index-8-lists.html">进度条</a></li>
+                <li><a href="index-8-lists.html">导航</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--==========================================page content=======================================================-->
+<div class="container">
+    <br>
+    <br>
+    <div class="bs-example">
+        <form class="form-inline">
+            <div class="col-lg-3">
+                <div class="input-group">
+                    <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+                    <input type="text" class="form-control" placeholder="Username">
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="input-group">
+                    <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+                    <input type="text" class="form-control" placeholder="Password">
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <button type="submit" class="btn"><span class="glyphicon glyphicon-send"></span> Login</button>
+                <button type="search" class="btn"><span class="glyphicon glyphicon-search"></span> Search</button>
+            </div>
+            <div class="col-lg-3">
+                <form>
+                    <div class="btn-group">
+                        <button class="btn btn-info"><span class="glyphicon glyphicon-file"></span> Document</button>
+                        <button data-toggle="dropdown" class="btn btn-info dropdown-toggle"><span class="caret"></span></button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#"><span class="glyphicon glyphicon-pencil"></span> Edit</a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-share"></span> Share</a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-print"></span> Print</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-trash"></span> Delete</a></li>
+                        </ul>
+                    </div>
+                </form>
+            </div>
+        </form>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <hr>
+
+    <div class="bs-example">
+        <div class="col-lg-4">
+            <h3>Tabs with icons</h3>
+            <ul class="nav nav-tabs">
+                <li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span>  Home</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-envelope"></span> Messages</a></li>
+            </ul>
+        </div>
+        <div class="col-lg-4">
+            <h3>Pills nav with icons</h3>
+            <ul class="nav nav-pills">
+                <li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span>  Home</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-envelope"></span> Messages</a></li>
+            </ul>
+        </div>
+        <div class="col-lg-4">
+            <h3>List nav with icons</h3>
+            <div class="well">
+                <ul class="nav nav-list">
+                    <li class="nav-header">LIBRARY </li>
+                    <li><a href="#"><span class="glyphicon glyphicon-camera"></span> Pictures</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-film"></span> Videos</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-file"></span> Documents</a></li>
+                    <li class="nav-header">FAVORITES</li>
+                    <li><a href="#"><span class="glyphicon glyphicon-music"></span> Music</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-pencil"></span> Applications</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-question-sign"></span> Help</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

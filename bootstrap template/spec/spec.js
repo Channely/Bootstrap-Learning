@@ -32,7 +32,6 @@ function index_1() {
     console.log(r1 && r2 && r3 && r4 && r5 && r6 && r7 && r8 && r9);
     return r1 && r2 && r3 && r4 && r5 && r6 && r7 && r8 && r9;
 }
-
 function index_2_1() {
     var div = document.getElementsByTagName('div');
     var body = document.body;
@@ -48,7 +47,6 @@ function index_2_1() {
     console.log(v1 && v2 && v3 && v4 && v5);
     return v1 && v2 && v3 && v4 && v5 && index_1();
 }
-
 function index_2_2() {
     var body = document.body;
     var container = document.getElementsByClassName('container')[0];
