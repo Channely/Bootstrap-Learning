@@ -1,51 +1,51 @@
 =======================================================================================================
-0,HTML页面初始化
-我们需要以一个基本的HTML模板开始,这样我们能够把所需要的bootstrap文件包含进来.
-右面就是我们bootstrap项目的开头.其中有注释的两行是引入测试文件的代码,对页面运行没有任何影响,只是作为过关的判断代码运行,不要修改.
+初始code
 code:
-    &lt;!DOCTYPE html&gt;
-    &lt;html&gt;
-    &lt;head&gt;
-        &lt;title&gt;Bootstrap&lt;/title&gt;
-    &lt;/head&gt;
-    &lt;body&gt;
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Bootstrap</title>
+    </head>
+    <body>
 
-        &lt;!--勿修改此行注释下的代码 否则人可能会对过关产生影响--&gt;
-        &lt;script src='spec/spec.js'&gt;&lt;/script&gt;        &lt;!--引入测试代码--&gt;
-        &lt;script src='spec/starter.js'&gt;&lt;/script&gt;     &lt;!--引入测试代码--&gt;
-    &lt;/body&gt;
-    &lt;/html&gt;
+        <!--勿修改此行注释下的代码 否则人可能会对过关产生影响-->
+        <script src='spec/spec.js'></script>        <!--引入测试代码-->
+        <script src='spec/starter.js'></script>     <!--引入测试代码-->
+    </body>
+    </html>
 
 ====================================================================================================
 1,bootstrap引入
 
 info:
     引入bootstrap文件
+    我们需要以一个基本的HTML模板开始,这样我们能够把所需要的bootstrap文件包含进来.
+    右面就是我们bootstrap项目的开头.其中有注释的两行是引入测试文件的代码,对页面运行没有任何影响,只是作为过关的判断代码运行,不要修改.
     为了使用bootstrap我们仅仅需要把四个文件引入到我们的模板当中来.
     因为bootstrap的js文件对于jquery是有依赖的,即jquery是bootstrap的前提,所以我们需要在bootstrap的js文件之前引入jquery的js文件.
     基于本教程的出发点，我们将会通过本地引入bootstrap资源文件的方式来引入bootstrap文件。
     它能够使所有bootstrap的CSS在我们的模板中生效。
 
 step:
-    在&lt;title&gt;标签后添加代码,引入我们相对路径为css/bootstrap.min.css和css/bootstrap-theme.min.css的文件css文件
-    在&lt;body&gt;标签内的注释代码之前添加代码,引入相对路径为js/jquery.min.js和js/bootstrap.min.js的js文件
+    在<title>标签后添加代码,引入我们相对路径为css/bootstrap.min.css和css/bootstrap-theme.min.css的文件css文件
+    在<body>标签内的注释代码之前添加代码,引入相对路径为js/jquery.min.js和js/bootstrap.min.js的js文件
 
 hint:
     引入文件的代码格式分别为
-    &lt;link href='css/bootstrap.min.css' rel='stylesheet'&gt;
-    &lt;link href='css/bootstrap-theme.min.css' rel='stylesheet'&gt;
+    <link href='css/bootstrap.min.css' rel='stylesheet'>
+    <link href='css/bootstrap-theme.min.css' rel='stylesheet'>
 
-    &lt;script src='js/jquery.min.js'&gt;&lt;/script&gt;
-    &lt;script src='js/bootstrap.min.js'&gt;&lt;/script&gt;
+    <script src='js/jquery.min.js'></script>
+    <script src='js/bootstrap.min.js'></script>
 
 
 code:
-    在&lt;/title&gt;与&lt;/head&gt;之间添加如下两行代码
-    &lt;link href='css/bootstrap.min.css' rel='stylesheet'&gt;
-    &lt;link href='css/bootstrap-theme.min.css' rel='stylesheet'&gt;
-    在&lt;!--勿修改 ... --&gt;的前两行添加如下两行代码
-    &lt;script src='js/jquery.min.js'&gt;&lt;/script&gt;
-    &lt;script src='js/bootstrap.min.js'&gt;&lt;/script&gt;
+    在</title>与</head>之间添加如下两行代码
+    <link href='css/bootstrap.min.css' rel='stylesheet'>
+    <link href='css/bootstrap-theme.min.css' rel='stylesheet'>
+    在<!--勿修改 ... -->的前两行添加如下两行代码
+    <script src='js/jquery.min.js'></script>
+    <script src='js/bootstrap.min.js'></script>
 
 =============================================================================================================
 2-1,Bootstrap的容器:container
@@ -61,8 +61,8 @@ hint:
     style的书写格式
     style='height: 600px; background-color: #cccccc'
 code:
-    在&lt;body&gt;之后&lt;script&gt;之前添加代码
-    &lt;div class='container' style='height: 600px; background-color: #cccccc'&gt;&lt;/div&gt;
+    在<body>之后<script>之前添加代码
+    <div class='container' style='height: 600px; background-color: #cccccc'></div>
 
 ===========================================================================================================
 2-2,背景区块 - jumbotron
@@ -73,28 +73,28 @@ info:
     jumbotron将会填充满整个container区域,或者填充满其标签所占区域空间.用法和使用container一样,只要给标签引入jumbotron类(class)即可.
 step:
     删掉上一节中我们给container容器添加的style属性
-    在container类所在的标签内添加一对&lt;div&gt;&lt;/div&gt;标签 并给该标签添加jumbotron类
+    在container类所在的标签内添加一对<div></div>标签 并给该标签添加jumbotron类
     在jumbotron标签内添如下代码以显示内容效果:	
-	&lt;h1&gt;Hello Earth !!&lt;/h1&gt;
-	&lt;h3&gt;Monsters. Monsters. Monsters. Monsters. Monsters. This is a world filled with monsters && monsters.&lt;/h3&gt;
+	<h1>Hello Earth !!</h1>
+	<h3>Monsters. Monsters. Monsters. Monsters. Monsters. This is a world filled with monsters && monsters.</h3>
 
 hint:
 	删掉:  style='height: 600px; background-color: #cccccc'
-	在&lt;div class='container'&gt;&lt;/div&gt;内添加&lt;div class='jumbotron'&gt;&lt;/div&gt;
-	在&lt;div class='jumbotron'&gt;&lt;/div&gt;内添加
-	&lt;h1&gt;Hello Earth !!&lt;/h1&gt;
-	&lt;h3&gt;Monsters. Monsters. Monsters. Monsters. Monsters. This is a world filled with monsters && monsters.&lt;/h3&gt;	
+	在<div class='container'></div>内添加<div class='jumbotron'></div>
+	在<div class='jumbotron'></div>内添加
+	<h1>Hello Earth !!</h1>
+	<h3>Monsters. Monsters. Monsters. Monsters. Monsters. This is a world filled with monsters && monsters.</h3>	
 
 code:
 	将    
-	&lt;div class='container' style='height: 600px; background-color: #cccccc'&gt;&lt;/div&gt;
+	<div class='container' style='height: 600px; background-color: #cccccc'></div>
 	修改成	
-	&lt;div class='container'&gt;
-	    &lt;div class='jumbotron'&gt;
-		&lt;h1&gt;Hello Earth !!&lt;/h1&gt;
-		&lt;h3&gt;Monsters. Monsters. Monsters. Monsters. Monsters. This is a world filled with monsters && monsters.&lt;/h3&gt;
-	    &lt;/div&gt;
-	&lt;/div&gt;
+	<div class='container'>
+	    <div class='jumbotron'>
+		<h1>Hello Earth !!</h1>
+		<h3>Monsters. Monsters. Monsters. Monsters. Monsters. This is a world filled with monsters && monsters.</h3>
+	    </div>
+	</div>
 
 ===========================================================================================================
 2-3,栅格系统 - Grid System
@@ -110,44 +110,44 @@ code:
 
 加入如下的文本或者你自定义的文字到container类的div标签当中。
 code:
-        &lt;h3&gt;我的个人页面 - 持续优化中&lt;/h3&gt;
+        <h3>我的个人页面 - 持续优化中</h3>
 
 现在并没有多少新的东西，这仅仅是一个标题，让我们转移到更有趣的方面，bootstrap导航。
-Bootstrap 有一个nav类让我们能够创建各种各样的导航元素，你可以在&lt;body&gt;标签之后加入如下的代码。
+Bootstrap 有一个nav类让我们能够创建各种各样的导航元素，你可以在<body>标签之后加入如下的代码。
 code:
-    &lt;nav class='navbar navbar-inverse navbar-fixed-top' role='navigation'&gt;
-        &lt;div class='container'&gt;
-            &lt;div class='navbar-header'&gt;
-                &lt;a class='navbar-brand ' href='#' style='color: deepskyblue'&gt;
-                    &lt;span class='glyphicon glyphicon-globe'&gt;&lt;/span&gt;
+    <nav class='navbar navbar-inverse navbar-fixed-top' role='navigation'>
+        <div class='container'>
+            <div class='navbar-header'>
+                <a class='navbar-brand ' href='#' style='color: deepskyblue'>
+                    <span class='glyphicon glyphicon-globe'></span>
                     Earth
-                &lt;/a&gt;
-                &lt;button type='button' class='navbar-toggle' data-toggle='collapse' data-target='#bs-example-navbar-collapse-1'&gt;
-                    &lt;span class='sr-only'&gt;Toggle navigation&lt;/span&gt;
-                    &lt;span class='icon-bar'&gt;&lt;/span&gt;
-                    &lt;span class='icon-bar'&gt;&lt;/span&gt;
-                    &lt;span class='icon-bar'&gt;&lt;/span&gt;
-                &lt;/button&gt;
-            &lt;/div&gt;
+                </a>
+                <button type='button' class='navbar-toggle' data-toggle='collapse' data-target='#bs-example-navbar-collapse-1'>
+                    <span class='sr-only'>Toggle navigation</span>
+                    <span class='icon-bar'></span>
+                    <span class='icon-bar'></span>
+                    <span class='icon-bar'></span>
+                </button>
+            </div>
 
-            &lt;div class='collapse navbar-collapse' id='bs-example-navbar-collapse-1'&gt;
-                &lt;ul class='nav navbar-nav navbar-right'&gt;
-                    &lt;li class='active'&gt;&lt;a href='#'&gt;Home&lt;/a&gt;&lt;/li&gt;
-                    &lt;li&gt;&lt;a href='#'&gt;客 厅&lt;/a&gt;&lt;/li&gt;
-                    &lt;li&gt;&lt;a href='#'&gt;邻 居&lt;/a&gt;&lt;/li&gt;
-                    &lt;li&gt;&lt;a href='#'&gt;广 场&lt;/a&gt;&lt;/li&gt;
-                    &lt;li class='dropdown'&gt;
-                        &lt;a href='#' class='dropdown-toggle' data-toggle='dropdown'&gt;后 院&lt;b class='caret'&gt;&lt;/b&gt;&lt;/a&gt;
-                        &lt;ul class='dropdown-menu'&gt;
-                            &lt;li&gt;&lt;a href='#'&gt;账 户&lt;/a&gt;&lt;/li&gt;
-                            &lt;li class='divider'&gt;&lt;/li&gt;
-                            &lt;li&gt;&lt;a href='#'&gt;设 置&lt;/a&gt;&lt;/li&gt;
-                        &lt;/ul&gt;
-                    &lt;/li&gt;
-                &lt;/ul&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/nav&gt;
+            <div class='collapse navbar-collapse' id='bs-example-navbar-collapse-1'>
+                <ul class='nav navbar-nav navbar-right'>
+                    <li class='active'><a href='#'>Home</a></li>
+                    <li><a href='#'>客 厅</a></li>
+                    <li><a href='#'>邻 居</a></li>
+                    <li><a href='#'>广 场</a></li>
+                    <li class='dropdown'>
+                        <a href='#' class='dropdown-toggle' data-toggle='dropdown'>后 院<b class='caret'></b></a>
+                        <ul class='dropdown-menu'>
+                            <li><a href='#'>账 户</a></li>
+                            <li class='divider'></li>
+                            <li><a href='#'>设 置</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
 navbar相关的类拥有导航条所有的样式，添加navbar-inverse类将会应用一个很酷的黑色风格, navbar-fixed-top将会把导航栏固定在页面顶部,
 如果不加的话, 导航栏将会跟随内容滚动，这是一个bootstrap的常见搭配。
@@ -164,47 +164,47 @@ li标签的dropdown类可以在菜单中实现下拉菜单效果.
 
 ===================================================================================================
 4,主内容和侧边栏
-我们已经完成了站点的主导航，现在我们需要添加主要内容区和一个侧边栏来支持更多的链接或导航路径。请把下面的代码添加到&lt;/h3&gt;之后。
+我们已经完成了站点的主导航，现在我们需要添加主要内容区和一个侧边栏来支持更多的链接或导航路径。请把下面的代码添加到</h3>之后。
 添加大量文本文字只是为了让页面拉长一些
 code:
-        &lt;div class='col-md-12'&gt;
-            &lt;div id='p1' class='jumbotron'&gt;
-                &lt;h2&gt;道具:Section 1&lt;/h2&gt;
-                &lt;p&gt;　　小歌班初期的“砌末”(道具)，都是日常生活用具，后期及绍兴文戏时期，模仿京剧、绍剧道具，并由“检场”人(越剧称“值台师傅”)管理。所用道具都放在一大木箱(俗称“百宝箱”)里。这些道具是向“堂中行头”师傅租来的。以后，主要演员有了“私房行头”，道具中的桌围、椅帔也成了主要演员必备的“私彩”。&lt;/p&gt;
-                &lt;p&gt;　　当时，为与比较写实的布景吻合，以及表演上的需要，对舞台上常用的道具，如刀、枪、剑、棍、马鞭等，加以改良，达到美观、轻巧，适合女演员使用。而对另一些道具，就直接采用生活用品，或仿真制作。其时越剧界出现了兼职主管道具的演职人员，开始向“王生记”家具店租用红木家具，向电影厂租用道具，或去旧货店及豫园小商品摊档购买生活用品。特殊需要的道具，按图样到灯彩店去定做。道具制作师，采用翻模脱胎、篾扎纸糊、立粉彩绘、刻花裱托等工艺技法，制作出各式各样道具。&lt;/p&gt;
-            &lt;/div&gt;
-            &lt;div id='p2' class='jumbotron'&gt;
-                &lt;h2&gt;道具:Section 2&lt;/h2&gt;
-                &lt;p&gt;　　如《梁山伯与祝英台》中的酒杯、花瓶，形态逼真。《情探》中的龙王、神像,《北地王》中的先祖列宗，都用篾扎纸糊后彩绘，似庙里菩萨一般。《红楼梦》中的花篮、薰炉、立地花瓶等，都是既逼真又美观，令观者赏心悦目。越剧的道具，具有“轻”“巧”“美”“牢”的艺术特点，为戏曲界同行所称道，如明角灯，各地不少兄弟剧种剧团，曾派人到上海越剧院来学习过道具制作。&lt;/p&gt;
-                &lt;p&gt;　　1981年9月，上海越剧院演出的《凄凉辽宫月》中的道具(由技师李其实制作)，获首届上海戏剧节道具奖，首开道具获单项奖的先例。&lt;/p&gt;
-            &lt;/div&gt;
-            &lt;div id='p3' class='jumbotron'&gt;
-                &lt;h2&gt;Main Content Section 3&lt;/h2&gt;
-                &lt;p&gt;Occaecat commodo aliqua delectus. Fap craft beer deserunt skateboard ea. Lomo bicycle rights adipisicing banh mi, velit ea sunt next level locavore single-origin coffee in magna veniam. High life id vinyl, echo park consequat quis aliquip banh mi pitchfork. Vero VHS est adipisicing. Consectetur nisi DIY minim messenger bag. Cred ex in, sustainable delectus consectetur fanny pack iphone.&lt;/p&gt;
-                &lt;p&gt;Veniam marfa mustache skateboard, adipisicing fugiat velit pitchfork beard. Freegan beard aliqua cupidatat mcsweeney's vero. Cupidatat four loko nisi, ea helvetica nulla carles. Tattooed cosby sweater food truck, mcsweeney's quis non freegan vinyl. Lo-fi wes anderson +1 sartorial. Carles non aesthetic exercitation quis gentrify. Brooklyn adipisicing craft beer vice keytar deserunt.&lt;/p&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-然后删掉上一节添加的额外效果 container的 style='margin-top: 70px' 和其内部标签 &lt;h3&gt;我的个人页面 - 持续优化中&lt;/h3&gt;
+        <div class='col-md-12'>
+            <div id='p1' class='jumbotron'>
+                <h2>道具:Section 1</h2>
+                <p>　　小歌班初期的“砌末”(道具)，都是日常生活用具，后期及绍兴文戏时期，模仿京剧、绍剧道具，并由“检场”人(越剧称“值台师傅”)管理。所用道具都放在一大木箱(俗称“百宝箱”)里。这些道具是向“堂中行头”师傅租来的。以后，主要演员有了“私房行头”，道具中的桌围、椅帔也成了主要演员必备的“私彩”。</p>
+                <p>　　当时，为与比较写实的布景吻合，以及表演上的需要，对舞台上常用的道具，如刀、枪、剑、棍、马鞭等，加以改良，达到美观、轻巧，适合女演员使用。而对另一些道具，就直接采用生活用品，或仿真制作。其时越剧界出现了兼职主管道具的演职人员，开始向“王生记”家具店租用红木家具，向电影厂租用道具，或去旧货店及豫园小商品摊档购买生活用品。特殊需要的道具，按图样到灯彩店去定做。道具制作师，采用翻模脱胎、篾扎纸糊、立粉彩绘、刻花裱托等工艺技法，制作出各式各样道具。</p>
+            </div>
+            <div id='p2' class='jumbotron'>
+                <h2>道具:Section 2</h2>
+                <p>　　如《梁山伯与祝英台》中的酒杯、花瓶，形态逼真。《情探》中的龙王、神像,《北地王》中的先祖列宗，都用篾扎纸糊后彩绘，似庙里菩萨一般。《红楼梦》中的花篮、薰炉、立地花瓶等，都是既逼真又美观，令观者赏心悦目。越剧的道具，具有“轻”“巧”“美”“牢”的艺术特点，为戏曲界同行所称道，如明角灯，各地不少兄弟剧种剧团，曾派人到上海越剧院来学习过道具制作。</p>
+                <p>　　1981年9月，上海越剧院演出的《凄凉辽宫月》中的道具(由技师李其实制作)，获首届上海戏剧节道具奖，首开道具获单项奖的先例。</p>
+            </div>
+            <div id='p3' class='jumbotron'>
+                <h2>Main Content Section 3</h2>
+                <p>Occaecat commodo aliqua delectus. Fap craft beer deserunt skateboard ea. Lomo bicycle rights adipisicing banh mi, velit ea sunt next level locavore single-origin coffee in magna veniam. High life id vinyl, echo park consequat quis aliquip banh mi pitchfork. Vero VHS est adipisicing. Consectetur nisi DIY minim messenger bag. Cred ex in, sustainable delectus consectetur fanny pack iphone.</p>
+                <p>Veniam marfa mustache skateboard, adipisicing fugiat velit pitchfork beard. Freegan beard aliqua cupidatat mcsweeney's vero. Cupidatat four loko nisi, ea helvetica nulla carles. Tattooed cosby sweater food truck, mcsweeney's quis non freegan vinyl. Lo-fi wes anderson +1 sartorial. Carles non aesthetic exercitation quis gentrify. Brooklyn adipisicing craft beer vice keytar deserunt.</p>
+            </div>
+        </div>
+然后删掉上一节添加的额外效果 container的 style='margin-top: 70px' 和其内部标签 <h3>我的个人页面 - 持续优化中</h3>
 刷新页面 我们将会看到铺满全屏的文字内容 jumbotron类为其内部包围的内容添加了灰色圆角背景
 bootstrap为我们提供了良好的布局方法col-lg-x等.
 这正是我们需要弄懂的bootstrap的栅格系统，当然，bootstrap的官方文档中涵盖了更多的细节，但我们将会以基础开始,更好地理解它。
 将col-lg-12 改为col-lg-9 此时 页面文字的布局发生了偏移 文字显示只占了页面宽度的9/12
 栅格系统的原则是将所作用区域12等分(支持嵌套使用 可以无限12等分切割页面)
-接下来我们在和&lt;div class='col-lg-9'&gt;...&lt;/div&gt;后面添加
+接下来我们在和<div class='col-lg-9'>...</div>后面添加
 code:
-        &lt;div class='col-md-3' id='myScrollspy'&gt;
-            &lt;div class='nav nav-tabs nav-stacked affix-top' data-spy='affix' data-offset-top='10'&gt;
-                &lt;a class='list-group-item active'&gt;定位坐标&lt;/a&gt;
-                &lt;a href='#p1' class='list-group-item'&gt;道具:Section 1&lt;/a&gt;
-                &lt;a href='#p2' class='list-group-item'&gt;道具:Section 2&lt;/a&gt;
-                &lt;a href='#p3' class='list-group-item'&gt;Main Content Section 3&lt;/a&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
+        <div class='col-md-3' id='myScrollspy'>
+            <div class='nav nav-tabs nav-stacked affix-top' data-spy='affix' data-offset-top='10'>
+                <a class='list-group-item active'>定位坐标</a>
+                <a href='#p1' class='list-group-item'>道具:Section 1</a>
+                <a href='#p2' class='list-group-item'>道具:Section 2</a>
+                <a href='#p3' class='list-group-item'>Main Content Section 3</a>
+            </div>
+        </div>
 代码中你可以看到名为col-md-9和col-md-3的类。它们会把页面分割成左边9列宽度和右边3列宽度的两部分，形成我们的内容区域和侧边栏。
 使用栅格系统的其中一个好处就是它会根据视窗宽度动态计算出列的宽度，因此你不需要写任何的媒体查询也能使你的站点工作在任何的屏幕分辨率下。
 你可以通过改变col-lg-x的数量和调整浏览器的大小来观察它们的效果。你会注意到当内容区小于992px的时候，这些列会垂直地堆放。
 这是由于col-lg-x对应的是在大屏幕时的布局分布
-col-xs col-sm col-md col-lg分别对应着不同分辨率下的布局设置(&lt;768px)(≥768px)(≥992px)(≥1200px)
+col-xs col-sm col-md col-lg分别对应着不同分辨率下的布局设置(<768px)(≥768px)(≥992px)(≥1200px)
 
 有'定位坐标'标题的部分是一个列表
 这个列表和前面的文字段落本没有关系 但是我们可以给他们建立关系

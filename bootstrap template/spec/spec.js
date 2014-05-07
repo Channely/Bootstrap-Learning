@@ -64,7 +64,7 @@ function index_2_2() {
 
     console.log(v1 + ' ' + v2 + ' ' + v3 + ' ' + v4 + ' ' + v5 + ' ' + v6 + ' ' + v7 + ' ' + v8)
     console.log(v1 && v2 && v3 && v4 && v5 && v6 && v7 && v8);
-    return v1 && v2 && v3 && v4 && v5 && v6 && v7 && v8 && index_2_1();
+    return v1 && v2 && v3 && v4 && v5 && v6 && v7 && v8;
 }
 function index_2_3() {
 }
