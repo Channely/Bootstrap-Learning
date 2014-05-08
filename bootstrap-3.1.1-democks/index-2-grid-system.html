@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="zh">
 <head>
-    <meta charset="UTF-8">
     <title>Bootstrap</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
-    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet" media="screen">
-    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css" rel="stylesheet" media="screen">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
     <style type="text/css">
         body{
             padding-top: 70px;
@@ -57,20 +56,24 @@
     </div>
     <!--=========page content==========-->
     <div class="container">
+
         <div class="jumbotron">
             <h1 class="text-center">前端框架：Bootstrap</h1>
         </div>
+
         <div class="container">
             <div class="row">
-                <button class="btn btn-success btn-lg col-xs-4 col-md-2 col-md-offset-1">Get</button>
-                <button class="btn btn-success btn-lg col-xs-4 col-md-2 col-md-offset-2">Get</button>
-                <button class="btn btn-success btn-lg col-xs-4 col-md-2 col-md-offset-2">Get</button>
+                <button class="btn btn-success btn-lg col-xs-offset-1 col-xs-2">Get</button>
+                <button class="btn btn-success btn-lg col-xs-offset-2 col-xs-2">Get</button>
+                <button class="btn btn-success btn-lg col-xs-offset-2 col-xs-2">Get</button>
             </div>
         </div>
+
         <br>
+
         <div class="container">
             <div class="row">
-                <div class="col-md-4" style="background-color: orangered">
+                <div class="col-md-3" style="background-color: orangered">
                     <h2>HTML</h2>
                     <p>HTML是一种用来编辑网页的标记性语言。它是一种类似于树的结构，包括许多节点和节点的属性。通过浏览器来将数据渲染成友好的可读页面。</p>
                     <p><a href="#" class="btn btn-success">More</a></p>
@@ -80,27 +83,30 @@
                     <p>CSS是用来描述页面效果的语言，现在有类似less和sass的更高级用法，扩充了此语言的原始功能。如果想了解或者学习CSS相关内容，请关注我们接下来即将发布的CSS教学内容，我们将尽最大努力做好准备工作.</p>
                     <p><a href="#" class="btn btn-success">More</a></p>
                 </div>
-                <div class="col-md-4" style="background-color: deepskyblue">
+                <div class="col-md-5" style="background-color: deepskyblue">
                     <h2>Bootstrap</h2>
                     <p>Bootstrap几乎是当前前端开发框架中知名度最高开源项目，他集结了如今前端领域中最勇于突破和敢于创新的开拓者，并且一直致力于将Bootstrap做得更加完善，更加便利与高效. 希望本教程能对您接下来的学习起到同样的推动效果。旅途愉快。做一个快乐的前端er。[| - _ - |] Y</p>
                     <p><a href="#" class="btn btn-success">More</a></p>
                 </div>
             </div>
         </div>
+
         <hr>
-        <div class="row">
-            <div class="col-md-12">
+
+        <div>
+            <div>
                 <footer>
                     <p>&copy; Copyright 2014 JimiTec.</p>
                 </footer>
             </div>
         </div>
+
     </div>
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
