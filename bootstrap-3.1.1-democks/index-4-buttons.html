@@ -58,6 +58,33 @@
     <!--============page content=============-->
 <div class="container">
     <div class="bs-example">
+        <!--按钮的标签-->
+        <a href="#" class="btn btn-default">made by &lt;a&gt;</a>
+        <button type="button" class="btn btn-default">made by &lt;button&gt;</button>
+        <input type="button" class="btn btn-default" value="made by &lt;input&gt;">
+        <br><br>
+        <a href="#" class="btn btn-primary">made by &lt;a&gt;</a>
+        <button type="button" class="btn btn-primary">made by &lt;button&gt;</button>
+        <input type="button" class="btn btn-primary" value="made by &lt;input&gt;">
+        <br><br>
+    </div>
+    <div class="bs-example">
+        <button type="button" class="btn btn-default btn-lg">Large</button>
+        <hr>
+        <!--bootstrap中btn色彩有六种  然后是大小(四种:大,中(默认),小,极小) 同样适用于a标签 & input标签-->
+        <button type="button" class="btn btn-default">Default</button>
+        <button type="button" class="btn btn-primary">Primary</button>
+        <button type="button" class="btn btn-info">Info</button>
+        <button type="button" class="btn btn-success">Success</button>
+        <button type="button" class="btn btn-warning">Warning</button>
+        <button type="button" class="btn btn-danger">Danger</button>
+        <hr>
+        <button type="button" class="btn btn-default btn-sm">Small</button>
+        <hr>
+        <button type="button" class="btn btn-default btn-xs">xsmall</button>
+    </div>
+    <div class="bs-example">
+        <!--大小和色彩的组合就形成了下面的组合矩阵-->
         <button type="button" class="btn btn-default btn-lg">Default</button>
         <button type="button" class="btn btn-primary btn-lg">Primary</button>
         <button type="button" class="btn btn-info btn-lg">Info</button>
@@ -87,57 +114,26 @@
         <button type="button" class="btn btn-danger btn-xs">Danger</button>
     </div>
     <div class="bs-example">
-        <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
-        <button type="button" class="btn btn-default btn-lg btn-block">Block level button</button>
+        <!--按钮可以设置禁用状态 注意和button标签的区别-->
+        <a href="#" class="btn btn-default btn-lg disabled">disabled</a>
+        <a href="#" class="btn btn-primary btn-lg disabled">disabled</a>
+        <!--按钮可以设置激活状态 注意和button标签的区别-->
+        <a href="#" class="btn btn-info btn-lg active">active</a>
+        <a href="#" class="btn btn-success btn-lg active">active</a>
+        <!--叠加效果 注意和button标签的区别-->
+        <a href="#" class="btn btn-warning btn-lg disabled active">active+disabled</a>
+        <a href="#" class="btn btn-danger btn-lg disabled active">active+disabled</a>
     </div>
     <div class="bs-example">
-        <a href="#" class="btn btn-default btn-lg disabled">Default</a>
-        <a href="#" class="btn btn-primary btn-lg disabled">Primary</a>
-        <a href="#" class="btn btn-info btn-lg disabled">Info</a>
-        <a href="#" class="btn btn-success btn-lg disabled">Success</a>
-        <a href="#" class="btn btn-warning btn-lg disabled">Warning</a>
-        <a href="#" class="btn btn-danger btn-lg disabled">Danger</a>
-    </div>
-    <div class="bs-example">
-        <button type="button" class="btn btn-default btn-lg" disabled="disabled">Default</button>
-        <button type="button" class="btn btn-primary btn-lg" disabled="disabled">Primary</button>
-        <button type="button" class="btn btn-info btn-lg" disabled="disabled">Info</button>
-        <button type="button" class="btn btn-success btn-lg" disabled="disabled">Success</button>
-        <button type="button" class="btn btn-warning btn-lg" disabled="disabled">Warning</button>
-        <button type="button" class="btn btn-danger btn-lg" disabled="disabled">Danger</button>
-    </div>
-    <div class="bs-example">
-        <a href="#" class="btn btn-default btn-lg">Large button</a>
-        <button type="button" class="btn btn-default btn-lg">Large button</button>
-        <input type="button" class="btn btn-default btn-lg" value="Large button">
-        <br><br>
-        <a href="#" class="btn btn-default">Default button</a>
-        <button type="button" class="btn btn-default">Default button</button>
-        <input type="button" class="btn btn-default" value="Default button">
-        <br><br>
-        <a href="#" class="btn btn-default btn-sm">Small button</a>
-        <button class="btn btn-default btn-sm" type="button">Small button</button>
-        <input type="button" class="btn btn-default btn-sm" value="Small button">
-        <br><br>
-        <a href="#" class="btn btn-default btn-xs">Mini button</a>
-        <button type="button" class="btn btn-default btn-xs">Mini button</button>
-        <input type="button" class="btn btn-default btn-xs" value="Mini button">
-        <hr>
-        <a href="#" class="btn btn-primary btn-lg">Large button</a>
-        <button type="button" class="btn btn-primary btn-lg">Large button</button>
-        <input type="button" class="btn btn-primary btn-lg" value="Large button">
-        <br><br>
-        <a href="#" class="btn btn-primary">Default button</a>
-        <button type="button" class="btn btn-primary">Default button</button>
-        <input type="button" class="btn btn-primary" value="Default button">
-        <br><br>
-        <a href="#" class="btn btn-primary btn-sml">Small button</a>
-        <button type="button" class="btn btn-primary btn-sm">Small button</button>
-        <input type="button" class="btn btn-primary btn-sm" value="Small button">
-        <br><br>
-        <a href="#" class="btn btn-primary btn-xs">Mini button</a>
-        <button type="button" class="btn btn-primary btn-xs">Mini button</button>
-        <input type="button" class="btn btn-primary btn-xs" value="Mini button">
+        <!--按钮可以设置禁用状态-->
+        <button type="button" class="btn btn-default btn-lg" disabled="disabled">disabled</button>
+        <button type="button" class="btn btn-primary btn-lg" disabled="disabled">disabled</button>
+        <!--按钮可以设置激活状态-->
+        <button type="button" class="btn btn-info btn-lg active">active</button>
+        <button type="button" class="btn btn-success btn-lg active">active</button>
+        <!--叠加效果-->
+        <button type="button" class="btn btn-warning btn-lg active" disabled="disabled">active+disabled</button>
+        <button type="button" class="btn btn-danger btn-lg active" disabled="disabled">active+disabled</button>
     </div>
     <div class="bs-example">
         <button type="button" class="btn btn-default" data-loading-text="Loading ...">Default</button>
@@ -155,8 +151,13 @@
         <button type="button" class="btn btn-warning" data-toggle="button">Warning</button>
         <button type="button" class="btn btn-danger" data-toggle="button">Danger</button>
     </div>
-    <body>
     <div class="bs-example">
+        <!--有一种按钮 它的大小不取决于按钮文字的长短 而是取决于所在区域的大小 我们可以结合栅格系统来调整这些块级按钮的大小-->
+        <button type="button" class="btn btn-primary btn-lg btn-block"> 块级按钮 - 占满区域大小 </button>
+        <button type="button" class="btn btn-default btn-lg btn-block"> 块级按钮 - 占满区域大小 </button>
+    </div>
+    <div class="bs-example">
+        <!-- 多选按钮 -->
         <div class="btn-group" data-toggle="buttons">
             <label class="btn btn-primary active">
                 <input type="checkbox"> Option 1
@@ -169,8 +170,8 @@
             </label>
         </div>
     </div>
-    </body>
     <div class="bs-example">
+        <!-- 单选按钮 -->
         <div class="btn-group" data-toggle="buttons">
             <label class="btn btn-primary active">
                 <input type="radio" name="options" id="option1"> Option 1
