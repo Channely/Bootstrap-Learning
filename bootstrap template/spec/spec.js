@@ -18,7 +18,7 @@ function index_1() {
     var scripts = document.getElementsByTagName('script');
     var length = scripts.length
 
-    var r1 = links.length == 2
+    var r1 = links.length >= 2
     var r2 = links[0].getAttribute('href') != links[1].getAttribute('href')
     var r3 = links[0].getAttribute('href') == "css/bootstrap.min.css" || links[0].getAttribute('href') == "css/bootstrap-theme.min.css";
     var r4 = links[1].getAttribute('href') == "css/bootstrap.min.css" || links[1].getAttribute('href') == "css/bootstrap-theme.min.css";
