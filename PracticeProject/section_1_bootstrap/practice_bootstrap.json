@@ -9,17 +9,17 @@
     "tips": "<li>引入文件的代码格式分别为:</li> <li>&lt;link href='css/bootstrap.min.css' rel='stylesheet'&gt;</li> <li>&lt;link href='css/bootstrap-theme.min.css'' rel='stylesheet'&gt;</li><li></li><li>&lt;script src='js/jquery.min.js'&gt;&lt;/script&gt;</li><li>&lt;script src='js/bootstrap.min.js'&gt;&lt;/script&gt;</li>",
     "answer": "<li>在&lt;/title&gt;与&lt;/head&gt;之间添加如下两行代码</li> <li>&lt;link href='css/bootstrap.min.css' rel='stylesheet'&gt;</li> <li>&lt;link href='css/bootstrap-theme.min.css' rel='stylesheet'&gt;</li> <li>在&lt;!--勿修改 ... --&gt;的前两行添加如下两行代码</li><li> &lt;script src='js/jquery.min.js'&gt;&lt;/script&gt;</li><li>&lt;script src='js/bootstrap.min.js'&gt;&lt;/script&gt;</li>",
 
-    "project_dir": "/bootstrap template",
+    "project_dir": "/bootstrap_template",
     "specs_dir": "/specs",
     "files": [
         {
             "name": "index-0.html",
-            "path": "/bootstrap template/"
+            "path": "/bootstrap_template/"
         }
     ],
     "spec": {
         "name": "index-0.html",
-        "path": "/bootstrap template/"
+        "path": "/bootstrap_template/"
     },
     "order": 0
 }
