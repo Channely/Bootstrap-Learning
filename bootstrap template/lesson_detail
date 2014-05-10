@@ -48,7 +48,7 @@ code:
     <script src='js/bootstrap.min.js'></script>
 
 =============================================================================================================
-2-1,Bootstrap的容器:container
+2-1,容器 - container
 
 info:
     bootstrap的container类(class)是非常有用的，它能在页面中创建一个居中的区域，然后我们能够把其他位置的内容放到里面。
@@ -93,7 +93,7 @@ code:
 	    <div class='jumbotron'>
 		<h1>Hello Earth !!</h1>
 		<h3>Monsters. Monsters. Monsters. Monsters. Monsters. This is a world filled with monsters && monsters.</h3>
-	    </div>
+            </div>
 	</div>
 
 ===========================================================================================================

@@ -439,7 +439,7 @@ getJasmineRequireObj().Env = function (j$) {
 
         var nextSpecId = 0;
         var getNextSpecId = function () {
-            return 'spec' + nextSpecId++;
+            return 'specs' + nextSpecId++;
         };
 
         var nextSuiteId = 0;
@@ -2480,7 +2480,7 @@ getJasmineRequireObj().version = function () {
 };
 //==============================================boot======================================
 /**
- Starting with version 2.0, this file "boots" Jasmine, performing all of the necessary initialization before executing the loaded environment and all of a project's specs. This file should be loaded after `jasmine.lib_js`, but before any project source files or spec files are loaded. Thus this file can also be used to customize Jasmine for a project.
+ Starting with version 2.0, this file "boots" Jasmine, performing all of the necessary initialization before executing the loaded environment and all of a project's specs. This file should be loaded after `jasmine.lib_js`, but before any project source files or specs files are loaded. Thus this file can also be used to customize Jasmine for a project.
 
  If a project is using Jasmine via the standalone distribution, this file can be customized directly. If a project is using Jasmine via the [Ruby gem][jasmine-gem], this file can be copied into the support directory via `jasmine copy_boot_js`. Other environments (e.g., Python) will have different mechanisms.
 
@@ -2580,7 +2580,7 @@ function boot(result_receiver) {
     };
 
     /**
-     * The `jsApiReporter` also receives spec results, and is used by any environment that needs to extract the results  from JavaScript.
+     * The `jsApiReporter` also receives specs results, and is used by any environment that needs to extract the results  from JavaScript.
      */
     env.addReporter(jasmineInterface.jsApiReporter);
 

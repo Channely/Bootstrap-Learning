@@ -25,8 +25,8 @@ function index_1() {
     var r5 = scripts[length - 4].getAttribute('src') != scripts[length - 3].getAttribute('src')
     var r6 = scripts[length - 4].getAttribute('src') == "js/jquery.min.js"
     var r7 = scripts[length - 3].getAttribute('src') == "js/bootstrap.min.js"
-    var r8 = scripts[length - 2].getAttribute('src') == "spec/spec.js"
-    var r9 = scripts[length - 1].getAttribute('src') == "spec/starter.js"
+    var r8 = scripts[length - 2].getAttribute('src') == "specs/specs.js"
+    var r9 = scripts[length - 1].getAttribute('src') == "specs/starter.js"
 
     console.log(r1 + ' ' + r2 + ' ' + r3 + ' ' + r4 + ' ' + r5 + ' ' + r6 + ' ' + r7 + ' ' + r8 + ' ' + r9)
     console.log(r1 && r2 && r3 && r4 && r5 && r6 && r7 && r8 && r9);
