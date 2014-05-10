@@ -5,7 +5,7 @@
 
     "simple_desc": "用container类(class)包裹页面上的内容即可实现居中对齐.并且和后面用到的栅格系统相匹配.",
     "desc": "bootstrap的container类(class)是非常有用的,它能在页面中创建一个居中的区域,然后我们能够把其他位置的内容放到里面. \n\r container类等价于创建了一个具有静态宽度并且margin值为auto的一个居中的div框. \n\r bootstrap的 container类的优点在于它是响应式的,它会以当前屏幕的宽度为基础计算出最佳的宽度予以应用.",
-    "step_desc": "在body标签内的开始(引入文件代码的前面),使用container类创建一个div.它会作为放置页面其他所有内容(代码)的外围标签. \n\r 通过标签内的style属性设置这个DIV的高度为600px并将其背景颜色设置为灰色(#cccccc)，你将会看到它所起到的作用：给其所包含的内容一个最美观的整体缩进布局.",
+    "step_desc": "在body标签内的开始(引入文件代码的前面),使用container类创建一个div.它会作为放置页面其他所有内容(代码)的外围标签. \n\r 通过标签内的style属性设置这个DIV的高度为600px并将其背景颜色设置为灰色(#cccccc)，你将会看到它所起到的作用：给其所包含的内容一个最美观的整体缩进布局. \n\r 提交成功后,请将弹出窗口最大化查看效果.",
     "tips": "<li>style的书写格式</li> <li>style='height: 600px; background-color: #cccccc'</li>",
     "answer": "<li>在&lt;body&gt;之后&lt;script&gt;之前添加代码</li> <li>&lt;div class='container' style='height: 600px; background-color: #cccccc'&gt;&lt;/div&gt;</li>",
 

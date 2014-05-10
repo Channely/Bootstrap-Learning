@@ -51,14 +51,14 @@ function index_2_2() {
     var body = document.body;
     var container = document.getElementsByClassName('container')[0];
     var jumbotron = document.getElementsByClassName('jumbotron')[0];
-    var v1 = body.childNodes[1] == container
+    var v1 = body.childNodes[1] == container;
     var v2 = body.childNodes[3].nodeName == 'SCRIPT';
     var v3 = container.childNodes[1] == jumbotron;
     var v4 = container.getAttribute('style') == undefined;
     var v5 = container.getAttribute('class') == 'container';
     var v6 = jumbotron.getAttribute('class') == 'jumbotron';
-    var v7 = jumbotron.childNodes.length >= 3;
-    var v8 = jumbotron.childNodes[1].childNodes[0].nodeType == 3 || jumbotron.childNodes[1].nodeType ==3;
+    var v7 = jumbotron.childNodes.length >= 13;
+    var v8 = jumbotron.childNodes[1].childNodes[0].nodeType == 3;
 
     console.log(v1 + ' ' + v2 + ' ' + v3 + ' ' + v4 + ' ' + v5 + ' ' + v6 + ' ' + v7 + ' ' + v8)
     console.log(v1 && v2 && v3 && v4 && v5 && v6 && v7 && v8);
