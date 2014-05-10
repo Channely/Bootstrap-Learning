@@ -1,0 +1,21 @@
+{
+    "basic": {
+        "name": "Bootstrap",
+        "desc": "Bootstrap是非常优秀的一个前端开源框架,其所有组件都有细致的使用方案,让你能够轻易地通过复制黏贴而附加到你的设计中,并且可以灵巧的自定义呈现效果.",
+        "target_effect": {
+            "name": "DQ",
+            "desc": "DQ是一款提供给Bootstrap初学者的练习应用.我们通过DQ的案例来学习bootstrap的基本知识以及HTML5开发的基础框架.",
+            "href": "/super_show/index.html"
+        },
+        "order": 0,
+        "ico": "images/bootstrap_logo.png",
+        "title_ico": "images/Bootstrap.png"
+    },
+    "relevance":{
+        "type":"path",
+        "column":"_id",
+        "index":{
+            "name":"HTML5"
+        }
+    }
+}

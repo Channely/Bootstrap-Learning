@@ -1,0 +1,7 @@
+{
+    "name": "排版 - Typography",
+    "desc": "对于呈现给视觉的文字信息,我们需要让这些信息变得更加取悦人的眼球.这正是Bootstrap的长处,而且游刃有余.",
+    "order": 2,
+    "video": "http://bootstrapvideo.qiniudn.com/排版-typogaphy.mp4",
+    "type": "normal"
+}

@@ -1,0 +1,25 @@
+{
+    "name": "背景区块",
+    "type": "normal",
+    "point": 200,
+
+    "simple_desc": "想要将页面内容更加突出地展示出来,吸引用户的第一关注,bootstrap让我们通过jumbotron类可是实现.",
+    "desc": "上一节中,我们给container类添加了背景style样式,让我们看到了内容区块的大小.但bootstrap中已经设定好了专用的背景区块--jumbotron. \n\r jumbotron类(class)是一个亮灰色的圆角背景填充,给毫无边界的的内容添加上舒适的背景填充色. \n\r jumbotron将会填充满整个container区域,或者填充满其标签所占区域空间.用法和使用container一样,只要给标签引入jumbotron类(class)即可.",
+    "step_desc": "删掉上一节中我们给container容器添加的style属性 \n\r 在container类所在的标签内添加一对<div></div>标签 并给该标签添加jumbotron类 \n\r 在jumbotron标签内添如下代码以显示内容效果:	\n\r <h1>Hello Earth !!</h1> \n\r <h3>Monsters. Monsters. Monsters. Monsters. Monsters. This is a world filled with monsters && monsters.</h3>",
+    "tips": "<li>删掉:  style='height: 600px; background-color: #cccccc'</li> <li>在&lt;div class='container'&gt;&lt;/div&gt;内添加&lt;div class='jumbotron'&gt;&lt;/div&gt;</li><li>在&lt;div class='jumbotron'&gt;&lt;/div&gt;内添加</li><li>&lt;h1&gt;Hello Earth !!&lt;/h1&gt;</li><li>&lt;h3&gt;Monsters. Monsters. Monsters. Monsters. Monsters. This is a world filled with monsters && monsters.&lt;/h3&gt;</li>",
+    "answer": "<li>将</li> <li>&lt;div class='container' style='height: 600px; background-color: #cccccc'&gt;&lt;/div&gt;</li><li>修改成</li><li>&lt;div class='container'&gt;</li><li>&lt;div class='jumbotron'&gt;</li><li>&lt;h1&gt;Hello Earth !!&lt;/h1&gt;</li><li>&lt;h3&gt;Monsters. Monsters. Monsters. Monsters. Monsters. This is a world filled with monsters && monsters.&lt;/h3&gt;</li><li>&lt;/div&gt;</li><li>&lt;/div&gt;</li>",
+
+    "project_dir": "/bootstrap template",
+    "specs_dir": "/specs",
+    "files": [
+        {
+            "name": "index-2-1.html",
+            "path": "/bootstrap template/"
+        }
+    ],
+    "spec": {
+        "name": "index-2-1.html",
+        "path": "/bootstrap template/"
+    },
+    "order": 1
+}
