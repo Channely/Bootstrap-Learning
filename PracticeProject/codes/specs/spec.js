@@ -65,6 +65,38 @@ function index_2_2() {
     return v1 && v2 && v3 && v4 && v5 && v6 && v7 && v8;
 }
 function index_2_3() {
+    var body = document.body;
+    var container = document.getElementsByClassName('container')[1];
+    var jumbotron = document.getElementsByClassName('jumbotron')[0];
+    var v1 = body.childNodes[3] == container;
+    var v2 = body.childNodes[5].nodeName == 'SCRIPT';
+    var v3 = container.childNodes[1] == jumbotron;
+    var v4 = container.getAttribute('style') == undefined;
+    var v5 = container.getAttribute('class') == 'container';
+    var v6 = jumbotron.getAttribute('class') == 'jumbotron';
+    var v7 = jumbotron.childNodes.length == 3;
+    var v8 = jumbotron.childNodes[1].childNodes[0].nodeType == 3;
+    var row_1 = jumbotron.childNodes[1];
+    var col_1_1 = row_1.childNodes[1];
+    var col_1_2 = row_1.childNodes[3];
+    var row_2_1 = col_1_2.childNodes[1];
+    var row_2_2 = col_1_2.childNodes[3];
+    var col_2_1 = row_2_2.childNodes[1];
+    var col_2_2 = row_2_2.childNodes[3];
+    var col_2_3 = row_2_2.childNodes[5];
+    var v9 = row_1.getAttribute('class') == 'row';
+    var v10 = col_1_1.getAttribute('class') == 'col-md-2';
+    var v11 = col_1_2.getAttribute('class') == 'col-md-10';
+    var v12 = row_2_1.getAttribute('class') == 'row';
+    var v13 = row_2_2.getAttribute('class') == 'row';
+    var v14 = col_2_1.getAttribute('class') == 'col-md-4';
+    var v15 = col_2_2.getAttribute('class') == 'col-md-4';
+    var v16 = col_2_3.getAttribute('class') == 'col-md-4';
+
+    console.log(v1 + ' ' + v2 + ' ' + v3 + ' ' + v4 + ' ' + v5 + ' ' + v6 + ' ' + v7 + ' ' + v8 + ' ' + v9 + ' ' + v10 + ' ' + v11 + ' ' + v12 + ' ' + v13 + ' ' + v14 + ' ' + v15 + ' ' + v16)
+    console.log(v1 && v2 && v3 && v4 && v5 && v6 && v7 && v8 && v9 && v10 && v11 && v12 && v13 && v14 && v15 && v16);
+
+    return v1 && v2 && v3 && v4 && v5 && v6 && v7 && v8 && v9 && v10 && v11 && v12 && v13 && v14 && v15 && v16 && index_1()
 }
 
 
