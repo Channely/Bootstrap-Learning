@@ -1,6 +1,6 @@
 {
     "name": "栅格系统 - Grid System",
-    "desc": "这正是我们需要弄懂的bootstrap的栅格系统.当然,bootstrap的官方文档中涵盖了更多的细节,但我们将会以基础开始,更好地理解它.",
+    "desc": "这正是我们需要弄懂的bootstrap栅格系统.当然,bootstrap的官方文档中涵盖了更多的细节,但我们将会以基础开始,更好地理解它.",
     "order": 1,
     "video": "http://bootstrapvideo.qiniudn.com/栅格系统-grid-system.mp4",
     "type": "normal"

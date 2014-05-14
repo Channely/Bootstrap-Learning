@@ -3,11 +3,11 @@
     "type": "normal",
     "point": 200,
 
-    "simple_desc": "栅格系统用一系列的行(row)与列(column)的组合布局页面,页面内容将会在创建好的布局中完美呈现.",
-    "desc": "栅格系统的原则是 在一行(即class='row'的标签)内 将所作用区域12等分(支持嵌套使用 可以无限12等分切割宽度).\n\r 一般我们用带有类col-md-1到col-md-12共十二种class的div标签 互相组合 将内容区域划分为大小不等的列 \n\r 比如 \n\r <div class='row'> \n\r <div class='col-md-6'> \n\r content1 \n\r </div> \n\r <div class='col-md-6'> \n\r content2 \n\r </div> \n\r </div> \n\r 会将内容在同一行的水平上分为大小相同的两列content1 content2",
-    "step_desc": "在jumbotron中最外层的row内 \n\r 将row的两个一级子标签div添加col-md-*类 \n\r 使两个div显示成大小比例为2:10的两列 \n\r 然后在最后一个row内 \n\r 将三个h6标签内的脚注文字 \n\r 用col-md-*类分为大小比例为4:4:4的三列",
+    "simple_desc": "栅格系统用一系列的行(row)与列(column)的组合布局页面,页面内容将会按照你的布局规划完美呈现.",
+    "desc": "为了页面完整性,在页面内容中,我们添加了导航栏组件<nav>标签中的代码,本节不会涉及导航栏的编写.\n\r栅格系统的原则是:在一'行'(即class='row'的标签)内容内,将所作用区域12等分(支持嵌套使用,可以无限12等分切割宽度).\n\r一般我们用带有类col-md-1到col-md-12共十二种class的div标签,互相组合,将内容区域划分为大小不等的列.\n\r比如:\n\r<div class='row'>\n\r<div class='col-md-6'>\n\rcontent1\n\r</div>\n\r<div class='col-md-6'>\n\rcontent2\n\r</div>\n\r</div>\n\r会将内容在同一行的水平上分为大小相同的两列content1 content2.",
+    "step_desc": "在jumbotron中最外层的row内,\n\r将row的两个一级子标签div添加col-md-*类.\n\r使两个div显示成大小比例为2:10的两列.\n\r 然后在最后一个row内,\n\r 将三个h6标签内的脚注文字,\n\r用col-md-*类分为大小比例为4:4:4的三列.",
     "tips": "<li>所用到的col-md-*类分别是</li> <li>col-md-2 col-md-10</li> <li> 和</li> <li> col-md-4 col-md-4 col-md-4</li>",
-    "answer": "<li>给54行的div标签class添加 col-md-2</li> <li>给58行的div标签class添加 col-md-10</li><li>给64行的div标签class添加 col-md-4 </li><li>给67行的div标签class添加 col-md-4 </li><li>给70行的div标签class添加 col-md-4</li>",
+    "answer": "<li>给54行的div标签class添加:col-md-2</li><li>给58行的div标签class添加:col-md-10</li><li>给64行的div标签class添加:col-md-4</li><li>给67行的div标签class添加:col-md-4</li><li>给70行的div标签class添加:col-md-4</li>",
 
     "project_dir": "/bootstrap_template",
     "specs_dir": "/specs",
