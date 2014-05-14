@@ -1,6 +1,7 @@
 {
     "basic": {
-        "name": "Bootstrap",
+        "show_name": "Bootstrap",
+        "id_name":"bootstrap",
         "desc": "Bootstrap是一个简洁,直观,强悍的前端开源框架,其所有组件都有细致的使用方案,能够轻易地附加到你的设计中,并且可以灵巧的自定义展现效果.",
         "target_effect": {
             "name": "我的主页",
