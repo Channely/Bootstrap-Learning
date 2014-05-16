@@ -131,15 +131,16 @@
         <button type="button" class="btn btn-primary btn-lg active" disabled="disabled">active+disabled</button>
     </div>
     <div class="bs-example">
-        <button type="button" class="btn btn-default" data-loading-text="Loading ...">Default</button>
-        <button type="button" class="btn btn-primary" data-loading-text="Loading...">Primary</button>
-        <button type="button" class="btn btn-info" data-loading-text="Loading...">Info</button>
-        <button type="button" class="btn btn-success" data-loading-text="Loading...">Success</button>
-        <button type="button" class="btn btn-warning" data-loading-text="Loading...">Warning</button>
-        <button type="button" class="btn btn-danger" data-loading-text="Loading...">Danger</button>
+        <!--显示加载状态-->
+        <button type="button" class="btn btn-default" id="loading-example-btn-1" data-loading-text="Loading ...">Default</button>
+        <button type="button" class="btn btn-primary" id="loading-example-btn-2" data-loading-text="Loading...">Primary</button>
+        <button type="button" class="btn btn-info" id="loading-example-btn-3" data-loading-text="Loading...">Info</button>
+        <button type="button" class="btn btn-success" id="loading-example-btn-4" data-loading-text="Loading...">Success</button>
+        <button type="button" class="btn btn-warning" id="loading-example-btn-5" data-loading-text="Loading...">Warning</button>
+        <button type="button" class="btn btn-danger" id="loading-example-btn-6" data-loading-text="Loading...">Danger</button>
     </div>
     <div class="bs-example">
-        <!---->
+        <!--单按钮状态转换-->
         <button type="button" class="btn btn-default" data-toggle="button">Default</button>
         <button type="button" class="btn btn-primary active" data-toggle="button">Primary</button>
         <button type="button" class="btn btn-info active" data-toggle="button">Info</button>
@@ -187,5 +188,62 @@
 <script src="js/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
+<!-- control the loading status of btn with data-loading-text attribute -->
+<script>
+    $('#loading-example-btn-1')
+            .click(function () {
+                var btn = $(this)
+                btn.button('loading')
+//                    调用reset时状态结束
+                setTimeout(function () {
+                    btn.button('reset')
+                }, 3000)
+            });
+    $('#loading-example-btn-2')
+            .click(function () {
+                var btn = $(this)
+                btn.button('loading')
+//                    调用reset时状态结束
+                setTimeout(function () {
+                    btn.button('reset')
+                }, 3000)
+            });
+    $('#loading-example-btn-3')
+            .click(function () {
+                var btn = $(this)
+                btn.button('loading')
+//                    调用reset时状态结束
+                setTimeout(function () {
+                    btn.button('reset')
+                }, 3000)
+            });
+    $('#loading-example-btn-4')
+            .click(function () {
+                var btn = $(this)
+                btn.button('loading')
+//                    调用reset时状态结束
+                setTimeout(function () {
+                    btn.button('reset')
+                }, 3000)
+            });
+    $('#loading-example-btn-5')
+            .click(function () {
+                var btn = $(this)
+                btn.button('loading')
+//                    调用reset时状态结束
+                setTimeout(function () {
+                    btn.button('reset')
+                }, 3000)
+            });
+    $('#loading-example-btn-6')
+            .click(function () {
+                var btn = $(this)
+                btn.button('loading')
+//                    调用reset时状态结束
+                setTimeout(function () {
+                    btn.button('reset')
+                }, 3000)
+            });
+</script>
 </body>
 </html>
