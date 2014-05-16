@@ -24,3 +24,5 @@ git pull --rebase
 git push
 echo "\033[32m another end \033[0m"
 cd ../Bootstrap-Learning/
+ls
+#end it.
