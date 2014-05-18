@@ -10,6 +10,9 @@ var send_signal_by_testing_result_of = {
     },
     '栅格系统': function () {
         send_result_by(index_2_3())
+    },
+    '段落排版': function () {
+        send_result_by(index_3())
     }
 }
 
@@ -98,7 +101,9 @@ function index_2_3() {
 
     return v1 && v2 && v3 && v4 && v5 && v6 && v7 && v8 && v9 && v10 && v11 && v12 && v13 && v14 && v15 && v16 && index_1()
 }
+function index_3(){
 
+}
 
 //================helper method======================
 function get_object_struct_from_string(string) {

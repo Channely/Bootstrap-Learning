@@ -1,0 +1,25 @@
+{
+    "name": "段落排版",
+    "type": "normal",
+    "point": 200,
+
+    "simple_desc": "",
+    "desc": "\n\r",
+    "step_desc": "\n\r",
+    "tips": "<li></li>",
+    "answer": "<li></li>",
+
+    "project_dir": "/bootstrap_template",
+    "specs_dir": "/specs",
+    "files": [
+        {
+            "name": "index-3.html",
+            "path": "/bootstrap_template/"
+        }
+    ],
+    "spec": {
+        "name": "index-3.html",
+        "path": "/bootstrap_template/"
+    },
+    "order": 0
+}
