@@ -11,7 +11,7 @@ var send_signal_by_testing_result_of = {
     '栅格系统': function () {
         send_result_by(index_2_3())
     },
-    '段落排版': function () {
+    '文字排版': function () {
         send_result_by(index_3())
     }
 }
