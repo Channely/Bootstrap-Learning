@@ -1,6 +1,6 @@
 {
     "name": "排版 - Typography",
-    "desc": "对于呈现给视觉的文字信息,我们需要让这些信息变得更加取悦人的眼球.这正是Bootstrap的长处,而且游刃有余.",
+    "desc": "在本节的学习过程中,我们将学习如何使用 Bootstrap 工具包来创建标题,设置段落文字的特殊显示效果(斜体,加粗,角标,对齐样式等).",
     "order": 2,
     "video": "http://bootstrapvideo.qiniudn.com/排版-typogaphy.mp4",
     "type": "normal"

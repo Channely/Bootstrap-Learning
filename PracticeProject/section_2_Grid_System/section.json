@@ -1,6 +1,6 @@
 {
     "name": "栅格系统 - Grid System",
-    "desc": "这正是我们需要弄懂的bootstrap栅格系统.当然,bootstrap的官方文档中涵盖了更多的细节,但我们将会以基础开始,更好地理解它.",
+    "desc": "栅格系统是一个二维结构,由行和列的区域组合排列而成.在网页设计中,它是一种快速有效地创建布局的方法.我们将会以基础开始,更好地理解它.",
     "order": 1,
     "video": "http://bootstrapvideo.qiniudn.com/栅格系统-grid-system.mp4",
     "type": "normal"

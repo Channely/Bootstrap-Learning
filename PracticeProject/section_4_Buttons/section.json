@@ -1,6 +1,6 @@
 {
     "name": "按钮 - Buttons",
-    "desc": "有点清新动人,但又可塑性极强的按钮组件肯定会为你的页面赢得更多的光环,还等什么,bootstrap的按钮组件就像你小时候的积木一样有趣!",
+    "desc": "按钮广泛应用于网站或应用程序中。在本节，我们将通过实例来演示如何使用 Boostrap 提供的按钮组件，以及如何定制默认的按钮。",
     "order": 3,
     "video": "http://bootstrapvideo.qiniudn.com/按钮-buttons.mp4",
     "type": "normal"
