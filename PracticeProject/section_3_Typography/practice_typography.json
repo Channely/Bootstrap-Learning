@@ -5,9 +5,9 @@
 
     "simple_desc": "我们可以使用Bootstrap强大的文字排版能力,将页面中的文字信息更加准确形象的展示出来.",
     "desc": "视频中演示了Bootstrap文字排版的各种样式效果.\n\r我们在此节将用到其中的一部分来改写页面展现效果.\n\r比如,我们要让段落首字突出显示(斜体em,大号字体big),\n\r让正文的注释序列号显示成上脚表(sup),\n\r并让注释文字与正文区分开(添加段落颜色),\n\r居中(text-center)显示页面底部的版权信息文字等.",
-    "step_desc": "首先我们给big标签(大号字体标签)中的'如'字,添加斜体字效果(用到em标签).\n\r然后分别给正文一二段的文字 [1] [2] [3] 添加上角标效果(共三处).\n\r再给注释段落所在行('row'),添加淡蓝色文字效果类'text-info'.\n\r最后给页面底部的版权信息添加一个居中的效果'text-center'",
+    "step_desc": "首先我们给big标签(大号字体标签)中的'如'字,添加斜体字效果(用到em标签).\n\r然后分别给正文一二段的文字 [1] [2] [3] 添加上角标效果(共三处).\n\r再给注释段落所在行('row'),添加淡蓝色文字效果类'text-info'.\n\r最后给页面底部的版权信息添加一个居中的效果'text-center'.\n\r点击提交后,将弹出的效果框最大化以查看效果.",
     "tips": "<li>给 &lt;big&gt;如&lt;/big&gt; 添加斜体标签 &lt;em&gt;&lt;/em&gt; </li><li>给 [1] [2] [3] 分别添加上角标标签 &lt;sup&gt;&lt;/sup&gt; </li><li>给注释段落的row添加类text-info</li><li>给84行的div标签添加类text-center</li>",
-    "answer": "<li>将62行的<li></li>&lt;big&gt;如&lt;/big&gt;<li></li>改为<li></li>&lt;big&gt;&lt;em&gt;如&lt;/em&gt;&lt;/big&gt;</li><li>62行 [1] 改为 &lt;sup&gt;[1]&lt;/sup&gt;</li><li>64行 [2] 改为 &lt;sup&gt;[2]&lt;/sup&gt;</li><li>64行 [3] 改为 &lt;sup&gt;[3]&lt;/sup&gt;</li><li>66行 class='row' 改为 class='row text-info'</li><li>84行 &lt;div&gt; 改为 &lt;div class='text-center'&gt;</li>",
+    "answer": "<li>将62行 &lt;big&gt;如&lt;/big&gt; 改为 &lt;big&gt;&lt;em&gt;如&lt;/em&gt;&lt;/big&gt;</li><li>62行 [1] 改为 &lt;sup&gt;[1]&lt;/sup&gt;</li><li>64行 [2] 改为 &lt;sup&gt;[2]&lt;/sup&gt;</li><li>64行 [3] 改为 &lt;sup&gt;[3]&lt;/sup&gt;</li><li>66行 class='row' 改为 class='row text-info'</li><li>84行 &lt;div&gt; 改为 &lt;div class='text-center'&gt;</li>",
 
     "project_dir": "/bootstrap_template",
     "specs_dir": "/specs",
