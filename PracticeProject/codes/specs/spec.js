@@ -126,8 +126,8 @@ function index_3() {
     var v11 = col_1_2.getAttribute('class') == 'col-md-10';
     var v12 = row_2_1.getAttribute('class') == 'row';
     var class_names_array = get_array_struct_from_string(row_2_2.getAttribute('class'));
-    var v13_1 = class_names_array[0] == 'row' && class_names_array[1] == 'text-muted';
-    var v13_2 = class_names_array[1] == 'row' && class_names_array[0] == 'text-muted';
+    var v13_1 = class_names_array[0] == 'row' && class_names_array[1] == 'text-info';
+    var v13_2 = class_names_array[1] == 'row' && class_names_array[0] == 'text-info';
     var v13 = v13_1 || v13_2;
     var v14 = col_2_1.getAttribute('class') == 'col-md-4';
     var v15 = col_2_2.getAttribute('class') == 'col-md-4';
