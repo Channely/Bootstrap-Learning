@@ -132,18 +132,14 @@ function index_3() {
     var v14 = col_2_1.getAttribute('class') == 'col-md-4';
     var v15 = col_2_2.getAttribute('class') == 'col-md-4';
     var v16 = col_2_3.getAttribute('class') == 'col-md-4';
-
     var v17 = body.childNodes[7].getAttribute('class') == 'text-center';
-
     var v18_1 = row_2_1.childNodes[1].childNodes[1].nodeName == "BIG" && row_2_1.childNodes[1].childNodes[1].childNodes[0].nodeName == "EM";
     var v18_2 = row_2_1.childNodes[1].childNodes[1].nodeName == "EM" && row_2_1.childNodes[1].childNodes[1].childNodes[0].nodeName == "BIG";
     var v18 = v18_1 || v18_2;
-
     var v19_1 = row_2_1.childNodes[1].childNodes[3].nodeName == "SUP" && row_2_1.childNodes[1].childNodes[3].childNodes[0].nodeValue == '[1]';
     var v19_2 = row_2_1.childNodes[3].childNodes[1].nodeName == "SUP" && row_2_1.childNodes[3].childNodes[1].childNodes[0].nodeValue == '[2]';
     var v19_3 = row_2_1.childNodes[3].childNodes[3].nodeName == "SUP" && row_2_1.childNodes[3].childNodes[3].childNodes[0].nodeValue == '[3]';
     var v19 = v19_1 && v19_2 && v19_3;
-
 
     console.log(v1 + ' ' + v2 + ' ' + v3 + ' ' + v4 + ' ' + v5 + ' ' + v6 + ' ' + v7 + ' ' + v8 + ' ' + v9 + ' ' + v10 + ' ' + v11 + ' ' + v12 + ' ' + v13 + ' ' + v14 + ' ' + v15 + ' ' + v16 + ' ' + v17 + ' ' + v18 + ' ' + v19)
     console.log(v1 && v2 && v3 && v4 && v5 && v6 && v7 && v8 && v9 && v10 && v11 && v12 && v13 && v14 && v15 && v16 && v17 && v18 && v19 && index_1());
