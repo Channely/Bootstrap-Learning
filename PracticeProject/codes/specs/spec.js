@@ -13,6 +13,9 @@ var send_signal_by_testing_result_of = {
     },
     '文字排版': function () {
         send_result_by(index_3())
+    },
+    '按钮': function () {
+        send_result_by(index_4())
     }
 }
 
@@ -145,6 +148,9 @@ function index_3() {
     console.log(v1 && v2 && v3 && v4 && v5 && v6 && v7 && v8 && v9 && v10 && v11 && v12 && v13 && v14 && v15 && v16 && v17 && v18 && v19 && index_1());
 
     return v1 && v2 && v3 && v4 && v5 && v6 && v7 && v8 && v9 && v10 && v11 && v12 && v13 && v14 && v15 && v16 && v17 && v18 && v19 && index_1();
+}
+function index_4() {
+    return true
 }
 
 //================helper method======================

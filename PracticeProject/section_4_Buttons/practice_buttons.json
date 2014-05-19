@@ -1,0 +1,25 @@
+{
+    "name": "按钮",
+    "type": "normal",
+    "point": 200,
+
+    "simple_desc": "simple_desc",
+    "desc": "desc \n\r desc",
+    "step_desc": "step_desc \n\r step_desc",
+    "tips": "<li>tips</li><li>tips</li>",
+    "answer": "<li>answer</li><li>answer</li>",
+
+    "project_dir": "/bootstrap_template",
+    "specs_dir": "/specs",
+    "files": [
+        {
+            "name": "index-4.html",
+            "path": "/bootstrap_template/"
+        }
+    ],
+    "spec": {
+        "name": "index-4.html",
+        "path": "/bootstrap_template/"
+    },
+    "order": 0
+}
