@@ -208,10 +208,10 @@ function send_result_by(result) {
     result ? pass_game() : unpass_game();
 }
 function catch_the_apec_error_of(code_block) {
-//    try {
-        code_block
-//    } catch (err) {
-//        console.log('SPEC ERROR:' + err.description)
-//        unpass_game()
-//    }
+    try {
+        return code_block
+    } catch (err) {
+        console.log('SPEC ERROR:' + err.description)
+        unpass_game()
+    }
 }
