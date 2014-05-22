@@ -1,21 +1,22 @@
-var send_signal_by_testing_result_of = {
+var
+    send_signal_by_testing_result_of = {
     '引入样式库': function () {
-        send_result_by(index_1())
+        send_result_by(catch_the_apec_error_of(index_1()))
     },
     '容器': function () {
-        send_result_by(index_2_1())
+        send_result_by(catch_the_apec_error_of(index_2_1()))
     },
     '背景区块': function () {
-        send_result_by(index_2_2())
+        send_result_by(catch_the_apec_error_of(index_2_2()))
     },
     '栅格系统': function () {
-        send_result_by(index_2_3())
+        send_result_by(catch_the_apec_error_of(index_2_3()))
     },
     '文字排版': function () {
-        send_result_by(index_3())
+        send_result_by(catch_the_apec_error_of(index_3()))
     },
     '按钮': function () {
-        send_result_by(index_4())
+        send_result_by(catch_the_apec_error_of(index_4()))
     }
 }
 
@@ -150,7 +151,28 @@ function index_3() {
     return v1 && v2 && v3 && v4 && v5 && v6 && v7 && v8 && v9 && v10 && v11 && v12 && v13 && v14 && v15 && v16 && v17 && v18 && v19 && index_1();
 }
 function index_4() {
-    return true
+    var search_table = document.body.childNodes[1].childNodes[1].childNodes[3].childNodes[1].childNodes[13].childNodes[3];
+    var search_class_array = get_array_struct_from_string(search_table.getAttribute('class'));
+    var search_type = search_table.getAttribute('type')
+    var search_value = search_table.childNodes[0].nodeValue
+    var v1_1 = search_class_array[0] == 'btn' && search_class_array[1] == 'btn-primary';
+    var v1_2 = search_class_array[1] == 'btn' && search_class_array[0] == 'btn-primary';
+    var v1_3 = search_class_array.length == 2;
+    var v1 = (v1_1 || v1_2) && v1_3;
+    var v2 = search_type == 'submit';
+    var v3 = search_value == "搜索";
+    var more_button = document.body.childNodes[3].childNodes[5];
+    var more_button_name = more_button.nodeName;
+    var more_button_value = more_button.childNodes[0].nodeValue;
+    var more_button_class_array = get_array_struct_from_string(more_button.getAttribute('class'));
+    var v2_1 = more_button_class_array.length == 4;
+    var v2_2 = has_needle_in_Array('btn', more_button_class_array) && has_needle_in_Array('btn-primary', more_button_class_array) && has_needle_in_Array('btn-lg', more_button_class_array) && has_needle_in_Array('btn-block', more_button_class_array)
+    var v2_3 = more_button.childNodes[0].nodeType == 3;
+    var v2 = v2_1 && v2_2 && v2_3;
+    console.log(v1 + ' ' + v2 + '');
+    console.log(v1 && v2 && index_3());
+
+    return v1 && v2 && index_3()
 }
 
 //================helper method======================
@@ -167,6 +189,14 @@ function get_json_length(json_obj) {
     }
     return jsonLength;
 }
+function has_needle_in_Array(needle, array) {
+    for (var i in array) {
+        if (needle === array[i]) {
+            return true;
+        }
+    }
+    return false;
+}
 //================logic method=======================
 function pass_game() {
     source.postMessage(true, "http://" + window.location.host)
@@ -176,4 +206,12 @@ function unpass_game() {
 }
 function send_result_by(result) {
     result ? pass_game() : unpass_game();
+}
+function catch_the_apec_error_of(code_block) {
+    try {
+        code_block
+    } catch (err) {
+        console.log('SPEC ERROR:' + err.description)
+        unpass_game()
+    }
 }
