@@ -1,0 +1,25 @@
+{
+    "name": "图标",
+    "type": "normal",
+    "point": 200,
+
+    "simple_desc": "demo.",
+    "desc": "demo.",
+    "step_desc": "demo.",
+    "tips": "demo.",
+    "answer": "demo.",
+
+    "project_dir": "/bootstrap_template",
+    "specs_dir": "/specs",
+    "files": [
+        {
+            "name": "index-5.html",
+            "path": "/bootstrap_template/"
+        }
+    ],
+    "spec": {
+        "name": "index-5.html",
+        "path": "/bootstrap_template/"
+    },
+    "order": 0
+}
