@@ -2,6 +2,6 @@
     "name": "引入 - bootstrap",
     "desc": "我们需要以一个基本的HTML模板开始,这样我们就能够把所需要的bootstrap资源文件包含进来.",
     "order": 0,
-    "video": "http://bootstrapvideo.qiniudn.com/引入-bootstrap.mp4 ",
+    "video": "http://bootstrapvideo.qiniudn.com/引入-bootstrap.mp4",
     "type": "normal"
 }
