@@ -1,0 +1,23 @@
+- 视频中介绍了能使用按钮样式类'btn'的三种标签:\<a\>\<button\>\<input\>.\n\r
+- 例如确认按钮\<button class='btn'\>确认\</button\>\n\r
+- 按钮的颜色可以由btn-default(白) btn-primary(蓝) btn-info(浅蓝) btn-success(绿) btn-warning(黄) btn-danger(红)这六个bootstrap类设置,只需要在按钮class属性中的btn后面添加相应的颜色类.\n\r
+- 如\<button class='btn btn-success'\>确认\</button\>就是一个绿色的确认按钮\n\r
+- 按钮的尺寸可以由 btn-lg(大) 默认(正常) btn-sm(小) btn-xs(极小)来设置\n\r
+- 如果想把按钮设置成横向大小充满整个父级区域,可以用btn-block类,\n\r
+- 如\<button class='btn btn-success btn-lg btn-block'\>确认\</button\>是一个尺寸比普通按钮大的绿色确认按钮,且横向大小占满整个内容区域的宽度.\n\r
+- 请按照下面步骤中的描述给导航栏的搜索框添加蓝色的搜索按钮\n\r
+- 并在页面的底部添加一个名为'更多'蓝色的块级按钮.
+
+- 在第50行的form表单中给一个普通的搜索按钮添加蓝色样式class\n\r
+- 在第100行的添加一个名为'更多'的大尺寸的蓝色按钮且使按钮横向充满内容区域
+
+- 蓝色按钮的样式类为:btn-primary\n\r
+- 大尺寸按钮样式类为:btn-lg\n\r
+- 块级按钮样式类为:btn-block
+
+- 将50行\n\r
+-  &lt;button type='submit' class='btn'&gt;搜索&lt;/button&gt;\n\r
+- 修改为\n\r
+- &lt;button type='submit' class='btn btn-primary'&gt;搜索&lt;/button&gt;\n\r
+- 在100行添加代码\n\r
+- &lt;button class='btn btn-primary btn-lg btn-block'&gt;更多&lt;/button&gt;
