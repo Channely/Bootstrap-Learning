@@ -3,7 +3,7 @@
     "type": "normal",
     "point": 200,
 
-    "simple_desc": "如果用container类(class)包裹页面上的内容,container会让被包含的内容根据屏幕大小区间的不同而有一个自适应的横向居中缩进.并且container会和后面用到的栅格系统相匹配.",
+    "simple_desc": "如果我们想让页面上的内容根据屏幕大小区间的不同而有一个自适应的横向居中缩进.使用bootstrap的container类将是一个事半功倍的选择.",
     "desc": "- bootstrap的container类(class)是非常有用的,它能在页面中创建一个居中的区域,然后我们能够把其他位置的内容放到里面.\n\r- 带有container类的div框等价于一个具有静态宽度并且margin值为auto的居中的div框.\n\r- bootstrap的container类的优点在于它是响应式的,它会以当前屏幕的宽度为基础计算出最佳的宽度予以应用.\n\r- 练习中,我们会给一个带有container类的div标签添加简单的显示内容，以观察container类的作用效果.",
     "step_desc": "- 在代码的第9行,使用container类创建一个div标签.它会作为放置页面其他所有内容的外围标签.\n\r- 通过标签的style属性设置这个DIV标签的高度(height)为600px并将其背景颜色(background-color)设置为灰色(#cccccc),你将会看到container类所起到的作用:给其所包含的内容一个最美观的整体缩进布局.\n\r- 提交成功后,将弹窗最大化以查看效果.",
     "tips": "- style的书写格式\n\r- style='height: 600px; background-color: #cccccc'",
