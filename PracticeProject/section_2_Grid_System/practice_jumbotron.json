@@ -5,9 +5,9 @@
 
     "simple_desc": "想要将页面某些内容更加突出地展示出来,吸引用户的第一关注?我们可以通过bootstrap的jumbotron类实现.",
     "desc": "- 上一节中,我们给container类添加了style样式,看到了内容区块的大小.但bootstrap中已经设定好了专用的背景区块--jumbotron.\n\r- jumbotron类(class)是一个亮灰色的圆角背景填充,给毫无边界的的内容添加上舒适的背景填充色.\n\r- jumbotron将会填充满整个container区域,或者填充满其标签所占区域空间.用法和使用container一样,只要给div标签引入jumbotron类(class)即可.",
-    "step_desc": "- 在container类所在的标签内添加一对&lt;div&lg;&lt;/div&lg;标签,将container内的所有内容包围起来.并给该标签添加jumbotron类\n\r- 这样被包含的内容将会优雅的呈现在背景区块内\n\r- 提交成功后,请将弹窗口最大化查看效果.",
-    "tips": "- 在container标签中,\n\r- 用&lt;div class='jumbotron'&gt;&lt;/div&gt;标签,\n\r- 将container标签之内包含的所有代码包围起来.",
-    "answer": "- 在第10行添加:\n\r- &lt;div class='jumbotron'&gt;\n\r- 在第17行添加:\n\r- &lt;/div&gt;",
+    "step_desc": "- 在container类所在的标签内添加一对<div&lg;</div&lg;标签,将container内的所有内容包围起来.并给该标签添加jumbotron类\n\r- 这样被包含的内容将会优雅的呈现在背景区块内\n\r- 提交成功后,请将弹窗口最大化查看效果.",
+    "tips": "- 在container标签中,\n\r- 用<div class='jumbotron'></div>标签,\n\r- 将container标签之内包含的所有代码包围起来.",
+    "answer": "- 在第10行添加:\n\r- <div class='jumbotron'>\n\r- 在第17行添加:\n\r- </div>",
 
     "project_dir": "/bootstrap_template",
     "specs_dir": "/specs",
