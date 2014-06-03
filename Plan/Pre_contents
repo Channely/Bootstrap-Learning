@@ -8,21 +8,32 @@
 
 4#按钮 - Buttons
 
+7#表格 - Tables
+
+8-1#列表 - Lists
+
+11#表单 - Forms
+
+17#导航 - Navs
+
+18#导航条 - Navbar
+
+20-1#弹出框 - Popovers
+20-2#警告框 - Alerts Messages
+20-3#模态框 - Modals
+
+
+
 5#图标 - Icons
 
 --6#工具提示 - Tooltips
 
-7#表格 - Tables
-
-8-1#列表 - Lists
 8-2#浮岛属性 - Affix
 
 9#隐藏 - Hidden
 
 10-1#标签 - Labels
 10-2#徽章 - Badges
-
-11#表单 - Forms
 
 12#标签页 - Tabs
 
@@ -35,15 +46,8 @@
 
 16#进度条 - Progress Bars
 
-17#导航 - Navs
-
-18#导航条 - Navbar
-
 19#下拉菜单 - Dropdowns
 
-20-1#弹出框 - Popovers
-20-2#警告框 - Alerts Messages
-20-3#模态框 - Modals
 
 
 
