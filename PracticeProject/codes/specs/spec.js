@@ -18,7 +18,7 @@ var
         '按钮': function () {
             send_result_by(catch_the_apec_error_of(index_4()))
         },
-        '按钮': function () {
+        '图标': function () {
             send_result_by(catch_the_apec_error_of(index_5()))
         }
     }
@@ -171,7 +171,9 @@ function index_4() {
     var v2_1 = more_button_class_array.length == 4;
     var v2_2 = has_needle_in_Array('btn', more_button_class_array) && has_needle_in_Array('btn-primary', more_button_class_array) && has_needle_in_Array('btn-lg', more_button_class_array) && has_needle_in_Array('btn-block', more_button_class_array)
     var v2_3 = more_button.childNodes[0].nodeType == 3;
-    var v2 = v2_1 && v2_2 && v2_3;
+    var v2_4 = more_button_name == 'BUTTON';
+    var v2_5 = more_button_value.search('更多') != -1 ;
+    var v2 = v2_1 && v2_2 && v2_3 && v2_4 && v2_5;
     console.log(v1 + ' ' + v2 + '');
     console.log(v1 && v2 && index_3());
 
@@ -200,7 +202,9 @@ function index_5() {
     var v2_1 = more_button_class_array.length == 4;
     var v2_2 = has_needle_in_Array('btn', more_button_class_array) && has_needle_in_Array('btn-primary', more_button_class_array) && has_needle_in_Array('btn-lg', more_button_class_array) && has_needle_in_Array('btn-block', more_button_class_array)
     var v2_3 = more_button.childNodes[0].nodeType == 3;
-    var v2 = v2_1 && v2_2 && v2_3;
+    var v2_4 = more_button_name == 'BUTTON';
+    var v2_5 = more_button_value.search('更多') != -1 ;
+    var v2 = v2_1 && v2_2 && v2_3 && v2_4 && v2_5;
     console.log(v1 + ' ' + v2 + '');
     console.log(v1 && v2 && index_3());
 
