@@ -1,6 +1,6 @@
 {
     "name": "图标 - Icons",
-    "desc": "按钮广泛应用于网站或应用程序中.在本节,我们将通过实例来演示如何使用Bootstrap提供的按钮组件,以及如何定制默认的按钮.",
+    "desc": "从移动应用到桌面浏览器页面,精彩的图标无不带给用户惊喜.在本教程中,我们将学习如何使用 Bootstrap 3 工具包来创建图标.",
     "order": 4,
     "video": "http://bootstrapvideo.qiniudn.com/图标-icons.mp4",
     "type": "normal"

@@ -1,24 +1,27 @@
 var
     send_signal_by_testing_result_of = {
-    '引入样式库': function () {
-        send_result_by(catch_the_apec_error_of(index_1()))
-    },
-    '容器': function () {
-        send_result_by(catch_the_apec_error_of(index_2_1()))
-    },
-    '背景区块': function () {
-        send_result_by(catch_the_apec_error_of(index_2_2()))
-    },
-    '栅格系统': function () {
-        send_result_by(catch_the_apec_error_of(index_2_3()))
-    },
-    '文字排版': function () {
-        send_result_by(catch_the_apec_error_of(index_3()))
-    },
-    '按钮': function () {
-        send_result_by(catch_the_apec_error_of(index_4()))
+        '引入样式库': function () {
+            send_result_by(catch_the_apec_error_of(index_1()))
+        },
+        '容器': function () {
+            send_result_by(catch_the_apec_error_of(index_2_1()))
+        },
+        '背景区块': function () {
+            send_result_by(catch_the_apec_error_of(index_2_2()))
+        },
+        '栅格系统': function () {
+            send_result_by(catch_the_apec_error_of(index_2_3()))
+        },
+        '文字排版': function () {
+            send_result_by(catch_the_apec_error_of(index_3()))
+        },
+        '按钮': function () {
+            send_result_by(catch_the_apec_error_of(index_4()))
+        },
+        '按钮': function () {
+            send_result_by(catch_the_apec_error_of(index_5()))
+        }
     }
-}
 
 function index_1() {
     var links = document.getElementsByTagName('link');
@@ -158,9 +161,38 @@ function index_4() {
     var v1_1 = search_class_array[0] == 'btn' && search_class_array[1] == 'btn-primary';
     var v1_2 = search_class_array[1] == 'btn' && search_class_array[0] == 'btn-primary';
     var v1_3 = search_class_array.length == 2;
-    var v1 = (v1_1 || v1_2) && v1_3;
-    var v2 = search_type == 'submit';
-    var v3 = search_value == "搜索";
+    var v1_4 = search_type == 'submit';
+    var v1_5 = search_value == "搜索";
+    var v1 = (v1_1 || v1_2) && v1_3 && v1_4 && v1_5;
+    var more_button = document.body.childNodes[3].childNodes[5];
+    var more_button_name = more_button.nodeName;
+    var more_button_value = more_button.childNodes[0].nodeValue;
+    var more_button_class_array = get_array_struct_from_string(more_button.getAttribute('class'));
+    var v2_1 = more_button_class_array.length == 4;
+    var v2_2 = has_needle_in_Array('btn', more_button_class_array) && has_needle_in_Array('btn-primary', more_button_class_array) && has_needle_in_Array('btn-lg', more_button_class_array) && has_needle_in_Array('btn-block', more_button_class_array)
+    var v2_3 = more_button.childNodes[0].nodeType == 3;
+    var v2 = v2_1 && v2_2 && v2_3;
+    console.log(v1 + ' ' + v2 + '');
+    console.log(v1 && v2 && index_3());
+
+    return v1 && v2 && index_3()
+}
+function index_5() {
+    var search_table = document.body.childNodes[1].childNodes[1].childNodes[3].childNodes[1].childNodes[13].childNodes[3];
+    var search_class_array = get_array_struct_from_string(search_table.getAttribute('class'));
+    var search_type = search_table.getAttribute('type')
+    var search_value = search_table.childNodes[2].nodeValue;
+    var v1_1 = search_class_array[0] == 'btn' && search_class_array[1] == 'btn-primary';
+    var v1_2 = search_class_array[1] == 'btn' && search_class_array[0] == 'btn-primary';
+    var v1_3 = search_class_array.length == 2;
+    var v1_4 = search_type == 'submit';
+    var v1_5 = search_value.search('搜索') != -1;
+    var search_icon = search_table.childNodes[1];
+    var v1_6 = search_icon.nodeName=="SPAN";
+    var search_icon_class_array = get_array_struct_from_string(search_icon.getAttribute('class'))
+    var v1_7 = has_needle_in_Array('glyphicon', search_icon_class_array)&&has_needle_in_Array('glyphicon-search', search_icon_class_array)&&search_icon_class_array.length==2;
+    var v1_8 = search_icon.childNodes.length==0;
+    var v1 = (v1_1 || v1_2) && v1_3 && v1_4 && v1_5 && v1_6 && v1_7 && v1_8;
     var more_button = document.body.childNodes[3].childNodes[5];
     var more_button_name = more_button.nodeName;
     var more_button_value = more_button.childNodes[0].nodeValue;
