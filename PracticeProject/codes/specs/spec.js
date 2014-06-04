@@ -149,7 +149,7 @@ function index_3() {
     var v19 = v19_1 && v19_2 && v19_3;
 
     console.log(v1 + ' ' + v2 + ' ' + v3 + ' ' + v4 + ' ' + v5 + ' ' + v6 + ' ' + v7 + ' ' + v8 + ' ' + v9 + ' ' + v10 + ' ' + v11 + ' ' + v12 + ' ' + v13 + ' ' + v14 + ' ' + v15 + ' ' + v16 + ' ' + v17 + ' ' + v18 + ' ' + v19)
-    console.log(v1 && v2 && v3 && v4 && v5 && v6 && v7 && v8 && v9 && v10 && v11 && v12 && v13 && v14 && v15 && v16 && v17 && v18 && v19 && index_1());
+    console.log(v1 && v2 && v3 && v4 && v5 && v6 && v7 && v8 && v9 && v10 && v11 && v12 && v13 && v14 && v15 && v16 && v17 && v18 && v19);
 
     return v1 && v2 && v3 && v4 && v5 && v6 && v7 && v8 && v9 && v10 && v11 && v12 && v13 && v14 && v15 && v16 && v17 && v18 && v19 && index_1();
 }
@@ -175,7 +175,6 @@ function index_4() {
     var v2_5 = more_button_value.search('更多') != -1 ;
     var v2 = v2_1 && v2_2 && v2_3 && v2_4 && v2_5;
     console.log(v1 + ' ' + v2 + '');
-    console.log(v1 && v2 && index_3());
 
     return v1 && v2 && index_3()
 }
@@ -206,7 +205,6 @@ function index_5() {
     var v2_5 = more_button_value.search('更多') != -1 ;
     var v2 = v2_1 && v2_2 && v2_3 && v2_4 && v2_5;
     console.log(v1 + ' ' + v2 + '');
-    console.log(v1 && v2 && index_3());
 
     return v1 && v2 && index_3()
 }
