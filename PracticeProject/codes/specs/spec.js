@@ -1,25 +1,25 @@
 var
     send_signal_by_testing_result_of = {
         '引入样式库': function () {
-            send_result_by(catch_the_apec_error_of(index_1()))
+            send_result_by(catch_the_apec_error_of(index_1))
         },
         '容器': function () {
-            send_result_by(catch_the_apec_error_of(index_2_1()))
+            send_result_by(catch_the_apec_error_of(index_2_1))
         },
         '背景区块': function () {
-            send_result_by(catch_the_apec_error_of(index_2_2()))
+            send_result_by(catch_the_apec_error_of(index_2_2))
         },
         '栅格系统': function () {
-            send_result_by(catch_the_apec_error_of(index_2_3()))
+            send_result_by(catch_the_apec_error_of(index_2_3))
         },
         '文字排版': function () {
-            send_result_by(catch_the_apec_error_of(index_3()))
+            send_result_by(catch_the_apec_error_of(index_3))
         },
         '按钮': function () {
-            send_result_by(catch_the_apec_error_of(index_4()))
+            send_result_by(catch_the_apec_error_of(index_4))
         },
         '图标': function () {
-            send_result_by(catch_the_apec_error_of(index_5()))
+            send_result_by(catch_the_apec_error_of(index_5))
         }
     }
 
@@ -243,9 +243,10 @@ function send_result_by(result) {
 }
 function catch_the_apec_error_of(code_block) {
     try {
-        return code_block
+        var result =  code_block()
+        return result;
     } catch (err) {
         console.log('SPEC ERROR:' + err.description)
-        unpass_game()
+        return false;
     }
 }

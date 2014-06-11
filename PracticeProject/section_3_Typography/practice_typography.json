@@ -6,8 +6,8 @@
     "simple_desc": "我们可以使用Bootstrap强大的文字排版能力,将页面中的文字信息更加准确形象的展示出来.",
     "desc": "- 视频中演示了Bootstrap文字排版的各种样式效果.\n\r- 我们在此节将用到其中的一部分来改写页面展现效果.\n\r- 比如:\n\r- [1]我们想让段落首字突出显示(斜体em,大号字体big),\n\r- [2]让正文的注释序列号显示成上脚表(sup),\n\r- [3]并让注释文字与正文区分开(添加段落颜色),\n\r- [4]居中(text-center)显示页面底部的网站信息文字等.",
     "step_desc": "- 首先我们给第60行的big标签(大号字体标签)添加斜体字效果(用到em标签).\n\r- 然后分别给60~61行正文一二段的文字注释符[1][2][3]添加上角标效果(共三处).\n\r- 再给63行注释段落所在行('row'),添加淡蓝色文字效果类'text-info'.\n\r- 最后给79行页面底部的网站信息添加一个居中的效果'text-center'.\n\r- 点击提交后,将弹出的效果框最大化以查看效果.",
-    "tips": "- 第60行:给<big>如</big>添加斜体标签<em></em>\n\r- 给60~61行[1][2][3]分别添加上角标标签<sup></sup>\n\r- 给63行注释段落的row添加类text-info\n\r- 给79行的div标签添加类text-center",
-    "answer": "- 将60行<big>如</big>改为<big><em>如</em></big>\n\r- 60行[1]改为<sup>[1]</sup>\n\r- 61行[2]改为<sup>[2]</sup>\n\r- 61行[3]改为<sup>[3]</sup>\n\r- 63行class='row'改为class='row text-info'\n\r- 79行<div class=''>改为<div class='text-center'>",
+    "tips": "- 第60行:给```<big>```如```</big>```添加斜体标签```<em></em>```\n\r- 给60~61行[1][2][3]分别添加上角标标签```<sup></sup>```\n\r- 给63行注释段落的row添加类text-info\n\r- 给79行的div标签添加类text-center",
+    "answer": "- 将60行```<big>```如```</big>```改为```<big><em>```如```</em></big>```\n\r- 60行[1]改为```<sup>[1]</sup>```\n\r- 61行[2]改为```<sup>[2]</sup>```\n\r- 61行[3]改为```<sup>[3]</sup>```\n\r- 63行class='row'改为class='row text-info'\n\r- 79行```<div class=''>```改为```<div class='text-center'>```",
 
     "project_dir": "/bootstrap_template",
     "specs_dir": "/specs",

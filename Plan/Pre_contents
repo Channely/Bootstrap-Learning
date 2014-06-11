@@ -8,12 +8,13 @@
 
 4#按钮 - Buttons
 
+5#图标 - Icons
 
+6#列表 - Lists
+-------#浮岛属性 - Affix
 
 
 7#表格 - Tables
-
-8-1#列表 - Lists
 
 11#表单 - Forms
 
@@ -28,16 +29,11 @@
 
 
 
-5#图标 - Icons
-
---6#工具提示 - Tooltips
-
-8-2#浮岛属性 - Affix
+-------#工具提示 - Tooltips
 
 9#隐藏 - Hidden
 
-10-1#标签 - Labels
-10-2#徽章 - Badges
+10#标签 - Labels
 
 12#标签页 - Tabs
 

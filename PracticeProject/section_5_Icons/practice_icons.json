@@ -4,10 +4,10 @@
     "point": 200,
 
     "simple_desc": "Bootstrap中使用图标的格式很固定,对每个图标的引用都需要用到'span'标签两个class类:'glyphicon'和'glyphicon-name'.",
-    "desc": "- 本节,我们将会为搜索按钮添加'放大镜'效果的图标.\n\r- Bootstrap中使用图标的格式很固定,对每个图标的引用都需要用到'span'标签和两个class类:'glyphicon'和'glyphicon-name'(name替换成相应图标的英文名称).\n\r- 标准引用格式:例如纯'home'图标\n\r- <span class='glyphicon glyphicon-home'></span>\n\r- 上面图标的引用格式可以被应用在任何显示文本文字的代码内.\n\r- 如果给图表添加文字描述,可以直接在图标后添加.\n\r- <span class='glyphicon glyphicon-home'></span> 主页\n\r- 注意:文字和标签之间需要保留一个空格\n\r- 例如:添加到页面按钮中的格式为\n\r- <button class='btn btn-info'>\n\r- <span class='glyphicon glyphicon-home'></span> 主页\n\r- </button>",
+    "desc": "- 本节,我们将会为搜索按钮添加'放大镜'效果的图标.\n\r- Bootstrap中使用图标的格式很固定,对每个图标的引用都需要用到'span'标签和两个class类:'glyphicon'和'glyphicon-name'(name替换成相应图标的英文名称).\n\r- 标准引用格式:例如纯'home'图标\n\r\t\t<span class='glyphicon glyphicon-home'></span>\n\r- 上面图标的引用格式可以被应用在任何显示文本文字的代码内.\n\r- 如果给图表添加文字描述,可以直接在图标后添加.\n\r\t\t<span class='glyphicon glyphicon-home'></span> 主页\n\r- 注意:文字和标签之间需要保留一个空格\n\r- 例如:添加到页面按钮中的格式为\n\r\t\t<button class='btn btn-info'>\n\r\t\t<span class='glyphicon glyphicon-home'></span> 主页\n\r\t\t</button>",
     "step_desc": "- 找到第51行,给'搜索'按钮添加名为'glyphicon-search'的图标.\n\r- 并且在图标后面保留按钮的'搜索'文字.\n\r- 注意'图标'和文字之间需要保留一个空格.",
-    "tips": "- 搜索图标的代码格式为:\n\r- <span class='glyphicon glyphicon-search'></span> 搜索",
-    "answer": "- 将51行:\n\r- <button type='submit' class='btn btn-primary'>搜索</button>\n\r- 修改为:\n\r- <button type='submit' class='btn btn-primary'>\n\r- <span class='glyphicon glyphicon-search'></span> 搜索\n\r- </button>",
+    "tips": "- 搜索图标的代码格式为:\n\r\t\t<span class='glyphicon glyphicon-search'></span> 搜索",
+    "answer": "- 将51行:\n\r\t\t<button type='submit' class='btn btn-primary'>搜索</button>\n\r- 修改为:\n\r\t\t<button type='submit' class='btn btn-primary'>\n\r\t\t<span class='glyphicon glyphicon-search'></span> 搜索 \n\r\t\t</button>",
 
     "project_dir": "/bootstrap_template",
     "specs_dir": "/specs",

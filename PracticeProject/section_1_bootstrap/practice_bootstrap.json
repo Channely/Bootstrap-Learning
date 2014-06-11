@@ -6,8 +6,8 @@
     "simple_desc": "获取Bootstrap最快速的方式就是下载经过编译和压缩的CSS、JavaScript文件,并且在html文档中引用他们.",
     "desc": "- 我们需要以一个基本的HTML模板开始,这样我们能够把所需要的bootstrap文件包含进来.\n\r- 右面就是我们bootstrap项目的开头.其中有注释的两行是引入测试文件的代码,对页面运行没有任何影响,只是作为过关的判断代码运行,不要修改.\n\r- 为了使用bootstrap我们仅仅需要把四个文件引入到我们的模板当中来.\n\r- 因为bootstrap的js文件对于jquery是有依赖的,即jquery是bootstrap的前提,所以我们需要在bootstrap的js文件之前引入jquery的js文件.\n\r- 基于本教程的出发点,我们将会通过本地引入bootstrap资源文件的方式来引入bootstrap文件.\n\r- 它能够使所有bootstrap的CSS在我们的模板中生效.",
     "step_desc": "- 在第6行添加代码,引入相对路径分别为css/bootstrap.min.css和css/bootstrap-theme.min.css的css文件\n\r- 在第11行添加代码,引入相对路径为js/jquery.min.js和js/bootstrap.min.js的js文件.",
-    "tips": "- 引入文件的代码格式分别为:\n\r- <link href='css/bootstrap.min.css' rel='stylesheet'>\n\r- <link href='css/bootstrap-theme.min.css' rel='stylesheet'>\n\r- <script src='js/jquery.min.js'></script>\n\r- <script src='js/bootstrap.min.js'></script>",
-    "answer": "- 在第6~7行添加如下两行代码\n\r- <link href='css/bootstrap.min.css' rel='stylesheet'>\n\r- <link href='css/bootstrap-theme.min.css' rel='stylesheet'>\n\r- 在10~11行添加如下两行代码\n\r- <script src='js/jquery.min.js'></script>\n\r- <script src='js/bootstrap.min.js'></script>",
+    "tips": "- 引入文件的代码格式分别为:\n\r\t\t<link href='css/bootstrap.min.css' rel='stylesheet'>\r\t\t<link href='css/bootstrap-theme.min.css' rel='stylesheet'>\r\t\t<script src='js/jquery.min.js'></script>\r\t\t<script src='js/bootstrap.min.js'></script>",
+    "answer": "- 在第6~7行添加如下两行代码\n\r\t\t<link href='css/bootstrap.min.css' rel='stylesheet'>\r\t\t<link href='css/bootstrap-theme.min.css' rel='stylesheet'>\n\r- 在10~11行添加如下两行代码\n\r\t\t<script src='js/jquery.min.js'></script>\r\t\t<script src='js/bootstrap.min.js'></script>",
 
     "project_dir": "/bootstrap_template",
     "specs_dir": "/specs",
