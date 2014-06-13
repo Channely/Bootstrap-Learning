@@ -212,11 +212,26 @@ function index_5() {
     return v1 && v2 && index_3()
 }
 function index_6(){
-
-
-
-
-    return true
+    var list_group = document.body.childNodes[3].childNodes[3].childNodes[1];
+    var list_group_item_1 = document.body.childNodes[3].childNodes[3].childNodes[1].childNodes[1];
+    var list_group_item_2 = document.body.childNodes[3].childNodes[3].childNodes[1].childNodes[3];
+    var list_group_item_3 = document.body.childNodes[3].childNodes[3].childNodes[1].childNodes[5];
+    var list_group_item_4 = document.body.childNodes[3].childNodes[3].childNodes[1].childNodes[7];
+    var list_group_class = get_array_struct_from_string(list_group.getAttribute('class'))[0];
+    var list_group_item_1_1_class = get_array_struct_from_string(list_group_item_1.getAttribute('class'))[0];
+    var list_group_item_1_2_class = get_array_struct_from_string(list_group_item_1.getAttribute('class'))[1];
+    var list_group_item_2_class = get_array_struct_from_string(list_group_item_2.getAttribute('class'))[0];
+    var list_group_item_3_class = get_array_struct_from_string(list_group_item_3.getAttribute('class'))[0];
+    var list_group_item_4_class = get_array_struct_from_string(list_group_item_4.getAttribute('class'))[0];
+    var v1 = list_group_class == "list-group";
+    var v2 = list_group_item_1_1_class == "list-group-item" || list_group_item_1_1_class == "active";
+    var v3 = list_group_item_1_2_class == "active" || list_group_item_1_2_class == "list-group-item";
+    var v4 = list_group_item_2_class == "list-group-item";
+    var v5 = list_group_item_3_class == "list-group-item";
+    var v6 = list_group_item_4_class == "list-group-item";
+    console.log('---'+v1+'---'+v2+'---'+v3+'---'+v4+'---'+v5+'---'+v6)
+    console.log(v1 && v2 && v3 && v4 && v5 && v6);
+    return v1 && v2 && v3 && v4 && v5 && v6;
 }
 
 //================helper method======================
