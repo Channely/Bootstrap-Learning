@@ -20,6 +20,9 @@ var
         },
         '图标': function () {
             send_result_by(catch_the_spec_error_of(index_5))
+        },
+        '列表': function () {
+            send_result_by(catch_the_spec_error_of(index_6))
         }
     }
 
@@ -207,6 +210,9 @@ function index_5() {
     console.log(v1 + ' ' + v2 + '');
 
     return v1 && v2 && index_3()
+}
+function index_6(){
+    return true
 }
 
 //================helper method======================
