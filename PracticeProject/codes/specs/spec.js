@@ -1,25 +1,25 @@
 var
     send_signal_by_testing_result_of = {
         '引入样式库': function () {
-            send_result_by(catch_the_apec_error_of(index_1))
+            send_result_by(catch_the_spec_error_of(index_1))
         },
         '容器': function () {
-            send_result_by(catch_the_apec_error_of(index_2_1))
+            send_result_by(catch_the_spec_error_of(index_2_1))
         },
         '背景区块': function () {
-            send_result_by(catch_the_apec_error_of(index_2_2))
+            send_result_by(catch_the_spec_error_of(index_2_2))
         },
         '栅格系统': function () {
-            send_result_by(catch_the_apec_error_of(index_2_3))
+            send_result_by(catch_the_spec_error_of(index_2_3))
         },
         '文字排版': function () {
-            send_result_by(catch_the_apec_error_of(index_3))
+            send_result_by(catch_the_spec_error_of(index_3))
         },
         '按钮': function () {
-            send_result_by(catch_the_apec_error_of(index_4))
+            send_result_by(catch_the_spec_error_of(index_4))
         },
         '图标': function () {
-            send_result_by(catch_the_apec_error_of(index_5))
+            send_result_by(catch_the_spec_error_of(index_5))
         }
     }
 
@@ -48,7 +48,7 @@ function index_2_1() {
     var styles = get_object_struct_from_string(div[0].getAttribute('style'));
 
     var v1 = body.childNodes[1] == div[0];
-    var v2 = div[0].getAttribute('class') == 'container'
+    var v2 = get_array_struct_from_string(div[0].getAttribute('class'))[0] == 'container'
     var v3 = get_json_length(styles) == 2;
     var v4 = styles.height == '600px';
     var v5 = styles["background-color"] == '#cccccc';
@@ -65,8 +65,8 @@ function index_2_2() {
     var v2 = body.childNodes[3].nodeName == 'SCRIPT';
     var v3 = container.childNodes[1] == jumbotron;
     var v4 = container.getAttribute('style') == undefined;
-    var v5 = container.getAttribute('class') == 'container';
-    var v6 = jumbotron.getAttribute('class') == 'jumbotron';
+    var v5 = get_array_struct_from_string(container.getAttribute('class'))[0] == 'container';
+    var v6 = get_array_struct_from_string(jumbotron.getAttribute('class'))[0] == 'jumbotron';
     var v7 = jumbotron.childNodes.length >= 13;
     var v8 = jumbotron.childNodes[1].childNodes[0].nodeType == 3;
 
@@ -82,8 +82,8 @@ function index_2_3() {
     var v2 = body.childNodes[9].nodeName == 'SCRIPT';
     var v3 = container.childNodes[1] == jumbotron;
     var v4 = container.getAttribute('style') == undefined;
-    var v5 = container.getAttribute('class') == 'container';
-    var v6 = jumbotron.getAttribute('class') == 'jumbotron';
+    var v5 = get_array_struct_from_string(container.getAttribute('class'))[0] == 'container';
+    var v6 = get_array_struct_from_string(jumbotron.getAttribute('class'))[0] == 'jumbotron';
     var v7 = jumbotron.childNodes.length == 3;
     var v8 = jumbotron.childNodes[1].childNodes[0].nodeType == 3;
     var row_1 = jumbotron.childNodes[1];
@@ -94,14 +94,14 @@ function index_2_3() {
     var col_2_1 = row_2_2.childNodes[1];
     var col_2_2 = row_2_2.childNodes[3];
     var col_2_3 = row_2_2.childNodes[5];
-    var v9 = row_1.getAttribute('class') == 'row';
-    var v10 = col_1_1.getAttribute('class') == 'col-md-2';
-    var v11 = col_1_2.getAttribute('class') == 'col-md-10';
-    var v12 = row_2_1.getAttribute('class') == 'row';
-    var v13 = row_2_2.getAttribute('class') == 'row';
-    var v14 = col_2_1.getAttribute('class') == 'col-md-4';
-    var v15 = col_2_2.getAttribute('class') == 'col-md-4';
-    var v16 = col_2_3.getAttribute('class') == 'col-md-4';
+    var v9 = get_array_struct_from_string(row_1.getAttribute('class'))[0] == 'row';
+    var v10 = get_array_struct_from_string(col_1_1.getAttribute('class'))[0] == 'col-md-2';
+    var v11 = get_array_struct_from_string(col_1_2.getAttribute('class'))[0] == 'col-md-10';
+    var v12 = get_array_struct_from_string(row_2_1.getAttribute('class'))[0] == 'row';
+    var v13 = get_array_struct_from_string(row_2_2.getAttribute('class'))[0] == 'row';
+    var v14 = get_array_struct_from_string(col_2_1.getAttribute('class'))[0] == 'col-md-4';
+    var v15 = get_array_struct_from_string(col_2_2.getAttribute('class'))[0] == 'col-md-4';
+    var v16 = get_array_struct_from_string(col_2_3.getAttribute('class'))[0] == 'col-md-4';
 
     console.log(v1 + ' ' + v2 + ' ' + v3 + ' ' + v4 + ' ' + v5 + ' ' + v6 + ' ' + v7 + ' ' + v8 + ' ' + v9 + ' ' + v10 + ' ' + v11 + ' ' + v12 + ' ' + v13 + ' ' + v14 + ' ' + v15 + ' ' + v16)
     console.log(v1 && v2 && v3 && v4 && v5 && v6 && v7 && v8 && v9 && v10 && v11 && v12 && v13 && v14 && v15 && v16);
@@ -116,8 +116,8 @@ function index_3() {
     var v2 = body.childNodes[9].nodeName == 'SCRIPT';
     var v3 = container.childNodes[1] == jumbotron;
     var v4 = container.getAttribute('style') == undefined;
-    var v5 = container.getAttribute('class') == 'container';
-    var v6 = jumbotron.getAttribute('class') == 'jumbotron';
+    var v5 = get_array_struct_from_string(container.getAttribute('class'))[0] == 'container';
+    var v6 = get_array_struct_from_string(jumbotron.getAttribute('class'))[0] == 'jumbotron';
     var v7 = jumbotron.childNodes.length == 3;
     var v8 = jumbotron.childNodes[1].childNodes[0].nodeType == 3;
     var row_1 = jumbotron.childNodes[1];
@@ -128,18 +128,18 @@ function index_3() {
     var col_2_1 = row_2_2.childNodes[1];
     var col_2_2 = row_2_2.childNodes[3];
     var col_2_3 = row_2_2.childNodes[5];
-    var v9 = row_1.getAttribute('class') == 'row';
-    var v10 = col_1_1.getAttribute('class') == 'col-md-2';
-    var v11 = col_1_2.getAttribute('class') == 'col-md-10';
-    var v12 = row_2_1.getAttribute('class') == 'row';
+    var v9 = get_array_struct_from_string(row_1.getAttribute('class'))[0] == 'row';
+    var v10 = get_array_struct_from_string(col_1_1.getAttribute('class'))[0] == 'col-md-2';
+    var v11 = get_array_struct_from_string(col_1_2.getAttribute('class'))[0] == 'col-md-10';
+    var v12 = get_array_struct_from_string(row_2_1.getAttribute('class'))[0] == 'row';
     var class_names_array = get_array_struct_from_string(row_2_2.getAttribute('class'));
     var v13_1 = class_names_array[0] == 'row' && class_names_array[1] == 'text-info';
     var v13_2 = class_names_array[1] == 'row' && class_names_array[0] == 'text-info';
     var v13 = v13_1 || v13_2;
-    var v14 = col_2_1.getAttribute('class') == 'col-md-4';
-    var v15 = col_2_2.getAttribute('class') == 'col-md-4';
-    var v16 = col_2_3.getAttribute('class') == 'col-md-4';
-    var v17 = body.childNodes[7].getAttribute('class') == 'text-center';
+    var v14 = get_array_struct_from_string(col_2_1.getAttribute('class'))[0] == 'col-md-4';
+    var v15 = get_array_struct_from_string(col_2_2.getAttribute('class'))[0] == 'col-md-4';
+    var v16 = get_array_struct_from_string(col_2_3.getAttribute('class'))[0] == 'col-md-4';
+    var v17 = get_array_struct_from_string(body.childNodes[7].getAttribute('class'))[0] == 'text-center';
     var v18_1 = row_2_1.childNodes[1].childNodes[1].nodeName == "BIG" && row_2_1.childNodes[1].childNodes[1].childNodes[0].nodeName == "EM";
     var v18_2 = row_2_1.childNodes[1].childNodes[1].nodeName == "EM" && row_2_1.childNodes[1].childNodes[1].childNodes[0].nodeName == "BIG";
     var v18 = v18_1 || v18_2;
@@ -241,7 +241,7 @@ function unpass_game() {
 function send_result_by(result) {
     result ? pass_game() : unpass_game();
 }
-function catch_the_apec_error_of(code_block) {
+function catch_the_spec_error_of(code_block) {
     try {
         var result =  code_block()
         return result;
