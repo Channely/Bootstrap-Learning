@@ -211,10 +211,10 @@ function index_5() {
 
 //================helper method======================
 function get_object_struct_from_string(string) {
-    return JSON.parse('{"' + (string.replace(/\s/g, '') + '"}').replace(/:/g, '":"').replace(/;/g, '","'))
+    return return JSON.parse('{"' + (string.replace(/\s/g, '').replace(/;$/g,'') + '"}').replace(/:/g, '":"').replace(/;/g, '","'))
 }
 function get_array_struct_from_string(string) {
-    return JSON.parse('["' + (string.replace(/\s/g, '","')) + '"]')
+    return JSON.parse('["' + (string.replace(/(^\s*)|(\s*$)/g,'').replace(/\s+/g, '","')) + '"]')
 }
 function get_json_length(json_obj) {
     var jsonLength = 0;
