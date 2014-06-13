@@ -1,7 +1,0 @@
-{
-    "name": "angular: ngShow",
-    "desc": "angular为编码者提供了灵活多变的页面功能组件,如ng-show,ng-switch,通过组建间数据的依赖关系控制页面状态.",
-    "order": 3,
-    "video": "2_6使用页面组件",
-    "type": "normal"
-}
