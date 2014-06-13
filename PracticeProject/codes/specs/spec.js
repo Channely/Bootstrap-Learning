@@ -212,6 +212,10 @@ function index_5() {
     return v1 && v2 && index_3()
 }
 function index_6(){
+
+
+
+
     return true
 }
 
