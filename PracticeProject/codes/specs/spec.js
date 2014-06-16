@@ -54,7 +54,7 @@ function index_2_1() {
     var v2 = get_array_struct_from_string(div[0].getAttribute('class'))[0] == 'container'
     var v3 = get_json_length(styles) == 2;
     var v4 = styles.height == '600px';
-    var v5 = styles["background-color"] == '#cccccc';
+    var v5 = styles["background-color"] == '#cccccc'|| styles["background-color"] == "rgb(204,204,204)";
 
     console.log(v1 + ' ' + v2 + ' ' + v3 + ' ' + v4 + ' ' + v5)
     console.log(v1 && v2 && v3 && v4 && v5);
