@@ -9,8 +9,8 @@
             "href": "/super_show/index.html"
         },
         "order": 0,
-        "ico": "images/bootstrap_logo.png",
-        "title_ico": "images/Bootstrap.png"
+        "ico": "/images/bootstrap_logo.png",
+        "title_ico": "/images/Bootstrap.png"
     },
     "relevance":{
         "type":"path",
