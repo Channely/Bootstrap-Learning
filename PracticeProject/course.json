@@ -10,7 +10,8 @@
         },
         "order": 0,
         "ico": "/images/bootstrap_logo.png",
-        "title_ico": "/images/Bootstrap.png"
+        "title_ico": "/images/Bootstrap.png",
+	"version": "1.0"
     },
     "relevance":{
         "type":"path",
