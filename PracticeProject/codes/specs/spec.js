@@ -1,5 +1,5 @@
 var
-    send_signal_by_testing_result_of = {
+    test_of = {
         '引入样式库': function () {
             send_result_by(catch_the_spec_error_of(index_1))
         },
@@ -258,10 +258,10 @@ function has_needle_in_Array(needle, array) {
 }
 //================logic method=======================
 function pass_game() {
-    source.postMessage(true, "http://" + window.location.host)
+    parent.report(true, "Success!");
 }
 function unpass_game() {
-    source.postMessage(false, "http://" + window.location.host)
+    parent.report(false, "Unfortunate!");
 }
 function send_result_by(result) {
     result ? pass_game() : unpass_game();

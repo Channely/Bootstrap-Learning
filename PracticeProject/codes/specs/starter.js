@@ -2635,7 +2635,7 @@ function get_api(specs) {
     console.log(specs);
     var interval = setInterval(function () {
         if (source) {
-            send_signal_by_testing_result_of[practice_name]();
+            test_of[practice_name]();
             clearInterval(interval);
         }
     }, 500);
